@@ -15,6 +15,7 @@
   padding: 30px;
   display: flex;
   position: relative;
+  padding-right: 50%;
 }
 
 .asesoriaimg {
@@ -109,27 +110,16 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1530px) {
   .asesoriaimg {
     width: 50%;
-    padding-top: 80px;
+  padding-top: 80px;
   }
-
-  .serviciosimg {
-    width: 50%;
-    padding-top: 80px;
-  }
-
-  .asesoriaimg {
-    width: 40%;
-    height: auto;
-  }
-
-  .txtdiferentes {
-    padding-left: 20px;
-    padding-right: 20px;
+  .asesoria-content {
+    margin-right: auto;
   }
 }
+
 
 @media (max-width: 768px) {
   .servicios-content {
@@ -167,6 +157,7 @@
   background-color: rgba(114, 154, 206, 0.87);
   position: absolute;
   border-radius: 20px;
+  margin: 60px;
 }
 
 .txtdiferentes p {
@@ -184,6 +175,26 @@
 }
 .list {
   text-align: left;
+}
+
+
+@media (max-width: 1600px) {
+  .asesoriaimg {
+    width: 50%;
+    padding-top: 80px;
+  }
+
+  .serviciosimg {
+    width: 50%;
+    padding-top: 80px;
+  }
+
+  .servicios-content {
+    
+    padding-right: 20px; 
+  }
+
+ 
 }
 
 @media (max-width: 768px) {
