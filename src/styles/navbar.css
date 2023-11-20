@@ -1,0 +1,35 @@
+/* Estilos generales para la barra de navegación */
+.navigation {
+  background: linear-gradient(
+    85deg,
+    rgba(53, 191, 221, 1) 0%,
+    rgba(39, 132, 224, 0.7007003484987745) 36%
+  );
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.imglogo {
+  cursor: pointer;
+  padding: auto;
+}
+
+/* Estilos para la versión móvil */
+@media screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+      180deg,
+      rgba(53, 191, 221, 1) 0%,
+      rgba(39, 132, 224, 0.7007003484987745) 36%
+    );
+  }
+
+  .navigation a {
+    margin: 10px 0;
+  }
+}

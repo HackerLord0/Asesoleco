@@ -1,0 +1,85 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Fab from "../components/Fab.astro";
+import "../styles/global.css";
+import "../styles/us.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Nosotros | ASESOLECO</title>
+  </head>
+  <body class="nosotros-body">
+    <Navigation />
+
+    <div class="main">
+      <h1>Nosotros</h1>
+
+      <div class="section1">
+        <h2>Le damos la Bienvenida al Corporativo ASESOLECO.</h2>
+        <p>
+          Somos una marca global con profesionales comprometidos alrededor del
+          mundo que se unen para brindar servicios, consultoría, administración
+          de riesgos y todas las herramientas de información de crédito,
+          cobranza, apoyo legal y lo mas importante instrumentos para vender con
+          cero perdidas, descubrirá las muchas posibilidades en que podemos
+          proteger su patrimonio y sabrá porque somos su mejor aliado cuando
+          usted habla de Negocios.
+        </p>
+      </div>
+
+      <div class="section2">
+        <h3>Historia</h3>
+        <p>
+          Desde sus Inicios en 2008 ASESOLECO ha recibido reconocimiento y
+          aceptación en todo el Ámbito Financiero y Empresarial gracias a su
+          capacidad de respuesta, a la calidad de su información y su
+          inmejorable servicio; consolidándose así como un elemento fundamental
+          en el entorno Bancario, Industrial y del Comercio.
+        </p>
+      </div>
+
+      <div class="section3">
+        <h3>Valores y cultura</h3>
+        <p>
+          Nuestra de colaboradores comparten los mismos valores, para ponerlos
+          en práctica con nuestros clientes, colegas y sus comunidades.
+        </p>
+      </div>
+
+      <div class="section4">
+        <h3>Responsabilidad Social</h3>
+        <p>
+          Para ASESOLECO en México la Responsabilidad Social es el compromiso de
+          trabajar en beneficio de nuestros grupos de interés para contribuir
+          así a un mejor futuro para todos los sectores económicos y sociales.
+        </p>
+      </div>
+
+      <div class="section5">
+        <h3>Organización</h3>
+        <p>
+          Ofrecemos a nuestros clientes experiencia global y un amplio
+          conocimiento local de sus necesidades.
+        </p>
+      </div>
+
+      <div class="section6">
+        <h3>Calidad</h3>
+        <p>
+          Hemos adoptado la definición de Calidad en Servicios Profesionales
+          como la diferencia entre las expectativas de servicio a recibir de los
+          clientes y la percepción de los servicios entregados.
+        </p>
+      </div>
+    </div>
+
+    <Fab />
+    <Footer />
+  </body>
+</html>

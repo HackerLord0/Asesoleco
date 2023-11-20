@@ -1,0 +1,231 @@
+.content {
+  margin: 0;
+}
+
+.welcome-header {
+  background-color: #ebf5fb;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+}
+
+/* Estilo para .asesoria */
+.asesoria {
+  background-color: #fef5e7;
+  padding: 30px;
+  display: flex;
+  position: relative;
+}
+
+.asesoriaimg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.asesoria:hover .asesoriaimg {
+  opacity: 1;
+}
+
+.asesoria img {
+  max-width: 100%;
+  height: auto;
+}
+
+.asesoria ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.asesoria li {
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  position: relative;
+  padding-left: 25px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 29, 255, 0.69);
+}
+
+/* Estilo para .servicios */
+.servicios {
+  background-color: #d1f2eb;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.servicios-content {
+  flex: 1;
+  padding-left: 55%;
+}
+
+.serviciosimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.servicios:hover .serviciosimg {
+  opacity: 1;
+}
+
+.servicios img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.servicios ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.servicios li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1600px) {
+  .asesoriaimg {
+    width: 50%;
+    padding-top: 80px;
+  }
+
+  .serviciosimg {
+    width: 50%;
+    padding-top: 80px;
+  }
+
+  .asesoriaimg {
+    width: 40%;
+    height: auto;
+  }
+
+  .txtdiferentes {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicios-content {
+    padding: 100px;
+    margin-top: 70px;
+  }
+}
+
+.conoce-button {
+  background-color: rgba(217, 45, 45, 0.75);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 15px 25px;
+}
+
+/* Estilo para .diferentes */
+.diferentes {
+  background-image: url("images/corporativos.jpg");
+  background-size: cover;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.txtdiferentes {
+  z-index: 100;
+  color: #85c1e9;
+  padding: 50px;
+  background-color: rgba(114, 154, 206, 0.87);
+  position: absolute;
+  border-radius: 20px;
+}
+
+.txtdiferentes p {
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+}
+
+.txtdiferentes h2 {
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+}
+.list {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .asesoria-content {
+    padding-top: 20px;
+    margin-left: 0;
+  }
+
+  .asesoriaimg {
+    position: static;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .serviciosimg {
+    position: static;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    padding-top: 20px;
+  }
+  .servicios-content {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .txtdiferentes {
+    text-align: left;
+    padding: 25px;
+    margin: 10px;
+  }
+
+  .txtdiferentes p {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: left;
+  }
+  .txtdiferentes h2 {
+    margin: 15px 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+}

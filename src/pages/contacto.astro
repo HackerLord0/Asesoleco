@@ -1,0 +1,117 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Fab from "../components/Fab.astro";
+import "../styles/global.css";
+import "../styles/contacto.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Contacto | ASESOLECO</title>
+  </head>
+  <body style="margin: 0;">
+    <Navigation />
+    <div class="main">
+      <div class="texto">
+        <h1>Contacto</h1>
+
+        <h3>Teléfonos Conmutador y Generales:</h3>
+        <p>
+          <i class="fa fa-mobile"></i>
+          <a href="tel:(55) 86-28-41-40" style="text-decoration: underline;"
+            >(55) 86-28-41-40</a
+          >
+        </p>
+
+        <h3>Directorio</h3>
+
+        <p>
+          <strong>Presidencia:</strong><br />
+           Lic. Gregorio Luna<br />
+          <i class="fa fa-envelope"></i><a
+            href="mailto:presidencia@asesoleco.com"
+            style="text-decoration: underline;">presidencia@asesoleco.com</a
+          >
+        </p>
+
+        <p>
+          <strong>Buró Jurídico:</strong><br />
+          <i class="fa fa-envelope"></i><a
+            href="mailto:plataforma.juridica@asesoleco.com"
+            style="text-decoration: underline;"
+            >plataforma.juridica@asesoleco.com</a
+          >
+        </p>
+
+        <p>
+          <strong>Operación y Sistemas:</strong><br />
+          <i class="fa fa-envelope"></i><a
+            href="mailto:soporte@asesoleco.com"
+            style="text-decoration: underline;">soporte@asesoleco.com</a
+          >
+        </p>
+
+        <p>
+          <strong>Atención a Clientes:</strong><br />
+
+          <i class="fa fa-envelope"></i><a
+            href="mailto:atencionaclientes@asesoleco.com"
+            style="text-decoration: underline;"
+            >atencionaclientes@asesoleco.com</a
+          ><br />
+          <i class="fa fa-envelope"></i>
+          <a
+            href="mailto:ventas@asesoleco.com"
+            style="text-decoration: underline;">ventas@asesoleco.com</a
+          >
+        </p>
+
+        <p>
+          <strong>Despacho Legal:</strong><br />
+           Lic. Beatriz Santiago<br />
+          <i class="fa fa-envelope"></i><a
+            href="mailto:bjuridico@asesoleco.com"
+            style="text-decoration: underline;">bjuridico@asesoleco.com</a
+          >
+        </p>
+      </div>
+
+      <div class="form">
+        <h1>Nosotros te contactamos.</h1>
+        <form class="formulario">
+          <p>
+            <label>Nombre (s):</label>
+            <input type="text" name="nombre" required />
+          </p>
+          <p>
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" />
+          </p>
+          <p>
+            <label>Correo:</label>
+            <input type="email" name="email" required />
+          </p>
+          <p>
+            <label>Teléfono:</label>
+            <input type="text" name="teléfono" required />
+          </p>
+          <p class="full" style="margin-right: 30px;">
+            <label>Mensaje:</label>
+            <textarea name="mensaje" required></textarea>
+          </p>
+          <p class="full">
+            <button class="boton-enviar">Enviar</button>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <Fab />
+    <Footer />
+  </body>
+</html>
