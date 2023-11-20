@@ -15,7 +15,6 @@
   padding: 30px;
   display: flex;
   position: relative;
-  padding-right: 50%;
 }
 
 .asesoriaimg {
@@ -32,7 +31,7 @@
 }
 
 .asesoria img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -58,6 +57,8 @@
   font-weight: 300;
 }
 
+
+
 .list li::before {
   content: "\2713";
   position: absolute;
@@ -70,7 +71,7 @@
 /* Estilo para .servicios */
 .servicios {
   background-color: #d1f2eb;
-  padding: 30px;
+  padding: 26px;
   display: flex;
   align-items: center;
   position: relative;
@@ -110,15 +111,6 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 1530px) {
-  .asesoriaimg {
-    width: 50%;
-  padding-top: 80px;
-  }
-  .asesoria-content {
-    margin-right: auto;
-  }
-}
 
 
 @media (max-width: 768px) {
@@ -178,7 +170,7 @@
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1880px) {
   .asesoriaimg {
     width: 50%;
     padding-top: 80px;
@@ -194,7 +186,9 @@
     padding-right: 20px; 
   }
 
- 
+  .text {
+    margin-right: 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -221,7 +215,9 @@
     padding: 20px;
     margin-top: 20px;
   }
-
+  .text {
+    margin-right: 0;
+  }
   .txtdiferentes {
     text-align: left;
     padding: 25px;
