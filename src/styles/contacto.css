@@ -20,11 +20,10 @@ body {
 
 .texto {
   flex: 30%;
-  padding: 3rem;
   box-sizing: border-box;
   background-color: #ccd7dc;
   border-radius: 10px;
-  margin: 5px;
+  padding: 30px;
 }
 .texto i.fa {
   margin-right: 10px;
@@ -89,6 +88,13 @@ body {
   }
   input {
     width: 10%;
+  }
+  .texto {
+    flex: 30%;
+    box-sizing: border-box;
+    background-color: #ccd7dc;
+    border-radius: 10px;
+    padding: 40px;
   }
 }
 
