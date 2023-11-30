@@ -19,7 +19,7 @@ body {
 }
 
 .texto {
-  flex: 30%;
+  flex: 35%;
   box-sizing: border-box;
   background-color: #ccd7dc;
   border-radius: 10px;
@@ -30,7 +30,7 @@ body {
 }
 
 .form {
-  flex: 70%;
+  flex: 65%;
   padding: 2rem;
   box-sizing: border-box;
   background-color: #eaeff1;

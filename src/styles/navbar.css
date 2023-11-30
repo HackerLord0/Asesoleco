@@ -1,20 +1,37 @@
-/* Estilos generales para la barra de navegación */
 .navigation {
-  background: linear-gradient(
-    85deg,
-    rgba(53, 191, 221, 1) 0%,
-    rgba(39, 132, 224, 0.7007003484987745) 36%
-  );
-  padding: 10px;
+  background-color: rgba(115, 169, 233, 0.5);
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0;
 }
 
+.logo-container {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+}
+
+
+
 .imglogo {
   cursor: pointer;
-  padding: auto;
+  width: 80%; 
+}
+
+.links {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0 20px; 
 }
 
 /* Estilos para la versión móvil */
@@ -22,14 +39,16 @@
   .navigation {
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(
-      180deg,
-      rgba(53, 191, 221, 1) 0%,
-      rgba(39, 132, 224, 0.7007003484987745) 36%
-    );
+    background: rgba(115, 169, 233, 0.5);
   }
 
-  .navigation a {
+  .logo-container,
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+
+  .links a {
     margin: 10px 0;
   }
 }
