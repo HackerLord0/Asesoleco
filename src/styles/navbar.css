@@ -97,6 +97,7 @@
     align-items: center;
     flex-grow: 1;
     background-image: url("images/logo.png");
+    background-color: rgba(115, 169, 233, 1);
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: left center; 
@@ -106,8 +107,7 @@
   }
 
   .imglogo {
-    width: 100%; 
-    padding: 0;
+    display: none;
   }
   .main-nav {
     display: none;
@@ -122,5 +122,9 @@
     height: 100%;
     background-color: rgba(115, 169, 233, 1);
     margin: 0;
+    z-index: 1; 
+  }
+  .main-nav.show > a {
+    margin: 60px 0; 
   }
 }
