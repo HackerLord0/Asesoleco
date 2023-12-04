@@ -4,11 +4,13 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-image: url("/images/contactbg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -25,6 +27,7 @@ body {
   border-radius: 10px;
   padding: 30px;
 }
+
 .texto i.fa {
   margin-right: 10px;
 }
@@ -39,40 +42,42 @@ body {
 
 .formulario {
   margin: 10px;
+}
 
-  label {
-    display: block;
-  }
+.formulario label {
+  display: block;
+}
 
-  button {
-    width: 30%;
-    padding: 1rem;
-    border: 1px solid lighten(#455a64, 50%);
-    margin-bottom: 1rem;
-    margin-left: 35%;
-    background-color: #a2bac5;
-    border-radius: 5px;
-    color: rgb(36, 91, 105);
-    cursor: pointer;
-    transition: background-color 2s ease-out;
-  }
+.formulario button {
+  width: 30%;
+  padding: 1rem;
+  border: 1px solid lighten(#455a64, 50%);
+  margin-bottom: 1rem;
+  margin-left: 35%;
+  background-color: #a2bac5;
+  border-radius: 5px;
+  color: rgb(36, 91, 105);
+  cursor: pointer;
+  transition: background-color 2s ease-out;
+}
 
-  input {
-    width: 100%;
-    height: 100%;
-    background-color: #cbdddf;
-    border-radius: 5px;
-  }
+.formulario input {
+  width: 100%;
+  background-color: #cbdddf;
+  border-radius: 5px;
+  padding-top: 20px;
+  border: 1px solid #455a64;
+}
 
-  textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 1px solid lighten(#455a64, 50%);
-    background-color: #cbdddf;
-    margin-bottom: 1rem;
-    resize: none;
-    border-radius: 5px;
-  }
+.formulario textarea {
+  padding: 1rem;
+  border: 1px solid lighten(#455a64, 50%);
+  margin-bottom: 1rem;
+  resize: none;
+  width: 100%;
+  background-color: #cbdddf;
+  border-radius: 5px;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -86,9 +91,11 @@ body {
     display: grid;
     grid-gap: 50px;
   }
+
   input {
     width: 10%;
   }
+
   .texto {
     flex: 30%;
     box-sizing: border-box;
@@ -96,10 +103,8 @@ body {
     border-radius: 10px;
     padding: 40px;
   }
-}
 
-/* Añadir regla de medios para el botón en responsivo */
-@media screen and (max-width: 767px) {
+  /* Añadir regla de medios para el botón en responsivo */
   .formulario button {
     width: 40%;
   }
@@ -124,4 +129,12 @@ body {
     outline: 0;
     transition: background-color 2s ease-out;
   }
+}
+
+/* Prefijos para compatibilidad con navegadores específicos */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .formulario button {
+    width: 40%;
+  }
+  
 }
