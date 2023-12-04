@@ -12,16 +12,17 @@ import "../styles/navbar.css";
     <meta name="generator" content={Astro.generator} />
   </head>
   <body style="margin: 0;">
-     <!---Barra navegación-->
-     <nav id="nav" class="main-nav">
-
+    <!---Barra navegación-->
+    <nav id="nav" class="main-nav">
       <!---Logo-->
       <div class="logo-container">
-        <a href="/"><img class="imglogo" src="/images/banner.png" alt="Logo" /></a>
+        <a href="/"
+          ><img class="imglogo" src="/images/banner.png" alt="Logo" /></a
+        >
       </div>
 
       <!---Links Navegación-->
-      
+
       <a class="link-item" href="/">Inicio</a>
       <a class="link-item" href="#">Soluciones</a>
       <a class="link-item" href="/nosotros">Nosotros</a>
@@ -29,9 +30,9 @@ import "../styles/navbar.css";
     </nav>
     <!---Botón responsive-->
     <div class="hamburger-container">
-      <a href="/" id="logoLink"> <!-- Agregado el enlace alrededor de la imagen -->
-    <img class="imglogo" src="/images/logo.png" alt="Logo" />
-  </a>
+      <a href="/" id="logoLink">
+        <img class="imglogo" src="/images/logo.png" alt="Logo" />
+      </a>
       <button id="button-menu" class="button-menu">
         <span></span>
         <span></span>
@@ -40,24 +41,21 @@ import "../styles/navbar.css";
     </div>
     <script>
       const toggleButton = document.getElementById("button-menu");
-const navWrapper = document.getElementById("nav");
+      const navWrapper = document.getElementById("nav");
 
-toggleButton.addEventListener("click", toggleMenu);
+      toggleButton.addEventListener("click", toggleMenu);
 
+      function toggleMenu() {
+        toggleButton.classList.toggle("close");
+        navWrapper.classList.toggle("show");
+        window.scrollTo(0, 0);
+      }
 
-function toggleMenu() {
-  toggleButton.classList.toggle("close");
-  navWrapper.classList.toggle("show");
-  window.scrollTo(0, 0);
-}
-
-function closeMenu() {
-  toggleButton.classList.remove("close");
-  navWrapper.classList.remove("show");
-  window.scrollTo(0, 0)
-}
-
-
+      function closeMenu() {
+        toggleButton.classList.remove("close");
+        navWrapper.classList.remove("show");
+        window.scrollTo(0, 0);
+      }
     </script>
   </body>
 </html>
