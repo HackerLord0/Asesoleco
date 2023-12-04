@@ -2,8 +2,8 @@
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 import Fab from "../components/Fab.astro";
-import '../styles/global.css';
-import '../styles/index.css';
+import "../styles/global.css";
+import "../styles/index.css";
 ---
 
 <html lang="en">
@@ -12,14 +12,14 @@ import '../styles/index.css';
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Asesoleco</title>
+    <title>ASESOLECO</title>
   </head>
   <body style="margin: 0">
-
     <Navigation />
 
     <div class="content">
-      <h1 class="welcome-header">Asesoría jurídica especializada y comercial
+      <h1 class="welcome-header">
+        Asesoría jurídica especializada y comercial
       </h1>
 
       <section class="asesoria">
@@ -41,51 +41,60 @@ import '../styles/index.css';
             <li>Guiarte en decisiones críticas para tu negocio.</li>
           </ul>
         </div>
-         
-            <img class="asesoriaimg" src="images/asesoria.jpg" alt="Asesorias profesionales" />
-      
+
+        <img
+          class="asesoriaimg"
+          src="images/asesoria.jpg"
+          alt="Asesorias profesionales"
+        />
       </section>
 
-
       <section class="servicios">
-        
-          <img class="servicioimg" src="images/servicios.jpg" alt="Servicios profesionales" />
+        <img
+          class="servicioimg"
+          src="images/servicios.jpg"
+          alt="Servicios profesionales"
+        />
 
-          <div class="serviciostext">
-        <h2 style=" font-size: 27px">Nuestros Servicios</h2>
-        <p style="font-size: 25px">Ofrecemos una variedad de servicios adaptados a tus necesidades:</p>
-        <ul class="list">
-          <li>Estructuración de contratos comerciales.</li>
-          <li>Resolución de disputas comerciales.</li>
-          <li>Asesoramiento en transacciones empresariales.</li>
-        </ul>
-        <a href="/soluciones">
-          <button class="conoce-button">Conoce nuestros servicios y soluciones</button>
-         </a>
-      </div>
-        
-    </section>
+        <div class="serviciostext">
+          <h2 style=" font-size: 27px">Nuestros Servicios</h2>
+          <p style="font-size: 25px">
+            Ofrecemos una variedad de servicios adaptados a tus necesidades:
+          </p>
+          <ul class="list">
+            <li>Estructuración de contratos comerciales.</li>
+            <li>Resolución de disputas comerciales.</li>
+            <li>Asesoramiento en transacciones empresariales.</li>
+          </ul>
+          <a href="/soluciones">
+            <button class="conoce-button"
+              >Conoce nuestros servicios y soluciones</button
+            >
+          </a>
+        </div>
+      </section>
 
       <section class="diferentes">
         <div class="txtdiferentes">
-        <h2>¿Qué nos hace diferentes?</h2>
-        <p>
-          Nos convertimos en tu socio estratégico, comprendemos las
-          complejidades del entorno empresarial y estamos comprometidos a
-          ayudarte a alcanzar tus objetivos comerciales de manera ética y
-          efectiva.
-        </p>
-    
-        <h2>Confía en Nosotros</h2>
-        <p class="confianza">
-          Confía en nosotros para ser tu aliado legal y potenciar el éxito
-          sostenible de tu empresa. <br/> <br/> Descubre cómo la asesoría jurídica de
-          Asesoleco puede marcar la diferencia para tu negocio.
-        </p>
-      </div>
+          <h2>¿Qué nos hace diferentes?</h2>
+          <p>
+            Nos convertimos en tu socio estratégico, comprendemos las
+            complejidades del entorno empresarial y estamos comprometidos a
+            ayudarte a alcanzar tus objetivos comerciales de manera ética y
+            efectiva.
+          </p>
+
+          <h2>Confía en Nosotros</h2>
+          <p class="confianza">
+            Confía en nosotros para ser tu aliado legal y potenciar el éxito
+            sostenible de tu empresa. <br />
+            <br /> Descubre cómo la asesoría jurídica de Asesoleco puede marcar
+            la diferencia para tu negocio.
+          </p>
+        </div>
       </section>
     </div>
-     <Fab/>
+    <Fab />
     <Footer />
   </body>
 </html>

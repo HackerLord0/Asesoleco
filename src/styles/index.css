@@ -1,5 +1,7 @@
+/* Estilos generales */
 .content {
   margin: 0;
+  background-color: #f8f8f8;
 }
 
 .welcome-header {
@@ -11,42 +13,38 @@
 
 /* Estilo para .asesoria */
 .asesoria {
- display: flex;
- flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .asesoriaimg {
   width: 60%;
-}
-
-.asesoria ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  margin: 30px;
 }
 
 .text {
   margin: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 3px 0px #969fcd;
+  border-radius: 3px;
+  padding: 65px;
+  background-color: #f2f2f2;
 }
 
 .asesoria li {
   margin-bottom: 10px;
 }
 
-.list {
-  list-style-type: none;
-  padding: 0;
-}
-
 .list li {
   position: relative;
   padding-left: 25px;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .servicioimg {
-  width: auto;
+  width: 55%;
+  padding: 30px;
 }
 
 .list li::before {
@@ -59,27 +57,20 @@
 }
 
 /* Estilo para .servicios */
-
- .servicios { 
+.servicios {
   display: flex;
   flex-direction: row;
   margin-bottom: 10px;
- }
-
-
-
-.servicios ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-top: 10px;
 }
 
-.servicios li {
-  margin-bottom: 10px;
-}
-
-.serviciostext { 
- margin-left: 40px;
+.serviciostext {
+  margin: 30px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 3px 0px #969fcd;
+  border-radius: 3px;
+  padding: 100px;
+  background-color: #f2f2f2;
 }
 
 .conoce-button {
@@ -90,6 +81,17 @@
   border-radius: 5px;
   cursor: pointer;
   padding: 15px 25px;
+}
+
+.asesoriaimg,
+.servicioimg {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.asesoria:hover .asesoriaimg,
+.servicios:hover .servicioimg {
+  opacity: 1;
 }
 
 /* Estilo para .diferentes */
@@ -125,7 +127,36 @@
   font-size: 24px;
   text-align: center;
 }
+
 .list {
   text-align: left;
 }
 
+/* Media query para estilos móviles */
+@media only screen and (max-width: 767px) {
+  .asesoria,
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .asesoriaimg,
+  .servicioimg {
+    width: 100%;
+    margin: 0;
+  }
+  .asesoria .text,
+  .servicios .serviciostext {
+    order: -1;
+  }
+
+  .txtdiferentes {
+    padding: 50px;
+    margin: 0px;
+    z-index: 0;
+  }
+  .diferentes {
+    height: 90vh;
+  }
+}

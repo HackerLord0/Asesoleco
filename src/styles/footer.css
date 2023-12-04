@@ -28,18 +28,27 @@
   width: auto;
   height: auto;
   margin: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .logo2 {
-  width: 40vh;
+  width: 30vh;
   height: auto;
   margin: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .logo3 {
   width: auto;
   height: auto;
   margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo1:hover,
+.logo2:hover,
+.logo3:hover {
+  transform: scale(1.1);
 }
 
 .footer-section3 {
@@ -76,7 +85,7 @@ li {
   }
 
   .logo2 {
-    width: 40vh;
+    width: 20vh;
     height: auto;
     margin: 10px;
   }

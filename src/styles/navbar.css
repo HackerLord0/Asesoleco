@@ -15,11 +15,9 @@
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
 }
 
-
-
 .imglogo {
   cursor: pointer;
-  width: 80%; 
+  width: 80%;
 }
 
 .links {
@@ -31,7 +29,7 @@
 .links a {
   font-weight: 600;
   font-size: 22px;
-  margin: 0 20px; 
+  margin: 0 20px;
 }
 
 /* Estilos para la versión móvil */
