@@ -1,5 +1,5 @@
 /* Estilos generales */
-.content {
+.content { 
   margin: 0;
   background-color: #f8f8f8;
 }
@@ -134,18 +134,21 @@
 
 /* Media query para estilos móviles */
 @media only screen and (max-width: 767px) {
+  body {
+    overflow-x: hidden; 
+  }
   .asesoria,
   .servicios {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
   .asesoriaimg,
   .servicioimg {
-    width: 100%;
-    margin: 0;
+    opacity: 1; 
+    width: 80%;
   }
+
   .asesoria .text,
   .servicios .serviciostext {
     order: -1;
