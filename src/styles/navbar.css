@@ -96,19 +96,22 @@
     justify-content: flex-end;
     align-items: center;
     flex-grow: 1;
-    background-image: url("images/logo.png");
-    background-color: rgba(115, 169, 233, 1);
-    background-size: contain; 
+    background-color: rgba(115, 169, 233, 1); 
     background-repeat: no-repeat; 
     background-position: left center; 
+  }
+  #logoLink {
+    display: block;
+    width: 100%; /* El enlace ocupa todo el ancho disponible */
+  }
+  .imglogo {
+    width: 80%; /* La imagen también ocupa todo el ancho del enlace */
   }
   .logo-container {
     clip-path: none; 
   }
 
-  .imglogo {
-    display: none;
-  }
+ 
   .main-nav {
     display: none;
   }
@@ -126,5 +129,8 @@
   }
   .main-nav.show > a {
     margin: 60px 0; 
+  }
+  .main-nav.show .imglogo {
+    display: none;
   }
 }
