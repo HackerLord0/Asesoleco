@@ -133,10 +133,7 @@
 }
 
 /* Media query para estilos móviles */
-@media only screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden; 
-  }
+@media only screen and (max-width: 1050px) {
   .asesoria,
   .servicios {
     flex-direction: column;
@@ -146,16 +143,22 @@
   .asesoriaimg,
   .servicioimg {
     opacity: 1; 
-    width: 80%;
+    width: 50%;
   }
 
   .asesoria .text,
   .servicios .serviciostext {
     order: -1;
   }
-
+ 
+.text {
+  padding: 10px;
+}
+.serviciostext {
+  padding: 20px;
+}
   .txtdiferentes {
-    padding: 50px;
+    padding: 0px;
     margin: 0px;
     z-index: 0;
   }
