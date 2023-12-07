@@ -1,18 +1,32 @@
-/*Barra de navegacion rapida princpial*/
 .logo-container {
   background: white;
   clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+  z-index: 2; 
 }
+
 .imglogo {
   padding-right: 100px;
 }
+
 .main-nav {
-  background-color: rgba(115, 169, 233, 0.5);
+  background-color: rgba(115, 169, 233, 0.8);
   flex-grow: 1;
-  gap: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.navbg {
+  background-image: url('images/navbar.png');
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* Ajusta según tus preferencias, menor que el de .main-nav */
 }
 
 .main-nav > a {
@@ -31,7 +45,7 @@
   margin: 10px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; 
 }
 
 .link-item:hover,
@@ -87,7 +101,6 @@
 .button-menu.close span:nth-child(3) {
   display: none;
 }
-
 @media screen and (max-width: 850px) {
   .hamburger-container {
     display: flex;
@@ -122,12 +135,15 @@
     height: 100%;
     background-color: rgba(115, 169, 233, 1);
     margin: 0;
-    z-index: 1;
+    z-index: 2;
   }
   .main-nav.show > a {
     margin: 60px 0;
   }
   .main-nav.show .imglogo {
+    display: none;
+  }
+  .navbg {
     display: none;
   }
 }

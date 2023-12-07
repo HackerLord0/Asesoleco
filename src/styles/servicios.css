@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: "Inter";
+}
+
+.container {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.tittle {
+    position: relative;
+    text-align: center;
+}
+
+.imgsol {
+    width: 100%;
+    height: auto; 
+    max-height: 40vh; 
+    object-fit: cover; 
+    filter: brightness(60%);
+    z-index: -2;
+}
+
+.soluciones {
+    font-size: 4vw; 
+    font-weight: 300;
+    color: white;
+    width: 50%; 
+    max-width: 500px; 
+    position: absolute;
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    letter-spacing: 8px; 
+    border: 4px solid rgb(99, 145, 201);
+    z-index: 1; 
+    box-sizing: border-box; 
+}
+
+@media (max-width: 768px) {
+    .soluciones {
+        font-size: 6vw; 
+        z-index: 1; 
+        width: 50%; 
+    }
+    .imgsol {
+        width: 100%;
+        height: auto; 
+        max-height: 50vh; 
+        object-fit: cover; 
+        filter: brightness(50%);
+        z-index: -1;
+    }
+}
