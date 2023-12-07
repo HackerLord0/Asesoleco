@@ -39,7 +39,7 @@ body {
 }
 
 .servicios-container {
-  margin: 20px;
+  margin: 100px;
 }
 
 .serviciostxt {
@@ -53,7 +53,7 @@ body {
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr); 
-  gap: 40px; 
+  gap: 60px; 
   justify-content: space-around;
   margin: 20px;
 }
