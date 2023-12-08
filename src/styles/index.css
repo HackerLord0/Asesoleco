@@ -19,8 +19,9 @@
 }
 
 .asesoriaimg {
-  width: 55%;
+  max-width: 50%;
   margin: 30px;
+  flex: 1; 
 }
 
 .text {
@@ -30,6 +31,7 @@
   border-radius: 6px;
   padding: 65px;
   background-color: #f2f2f2;
+  flex: 1; 
 }
 
 .asesoria li {
@@ -41,11 +43,6 @@
   padding-left: 25px;
   font-size: 18px;
   font-weight: 400;
-}
-
-.servicioimg {
-  width: 100%;
-  padding: 30px;
 }
 
 .list li::before {
@@ -69,9 +66,15 @@
   margin: 30px;
   box-sizing: border-box;
   box-shadow: 0px 3px 3px 0px #969fcd;
-  border-radius: 3px;
-  padding: 100px;
+  border-radius: 6px;
+  padding: 65px;
   background-color: #f2f2f2;
+  flex: 1;
+}
+.servicioimg {
+  max-width: 50%;
+  padding: 30px;
+  flex: 1;
 }
 
 .conoce-button {
@@ -82,6 +85,7 @@
   border-radius: 5px;
   cursor: pointer;
   padding: 15px 25px;
+  margin-top: 35px;
 }
 
 .asesoriaimg,
@@ -105,7 +109,9 @@
   z-index: 0;
   height: 90vh;
 }
-
+p{
+  font-size: 18px;
+}
 .txtdiferentes {
   z-index: 100;
   color: #85c1e9;
