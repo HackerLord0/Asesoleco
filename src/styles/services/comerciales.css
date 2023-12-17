@@ -1,0 +1,38 @@
+.banner {
+    width: 100%;
+    height: 100%;
+}
+.tittle {
+    font-size: 4vw;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    width: 77%;
+    letter-spacing: 8px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 20%;
+    right: 11%;
+    text-align: center;
+    padding: 6px;
+  }
+  .bannerimg {
+    filter: brightness(60%);
+    object-fit: cover;
+    width: 100%;
+    height: 40vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    .tittle {
+        font-size: 9vw;
+        width: 100%;
+        letter-spacing: 4px;
+        text-align: center;
+        align-content: center;
+        right: 0%;
+      }
+
+  .bannerimg {
+    height: 40vh;
+  }
+}
