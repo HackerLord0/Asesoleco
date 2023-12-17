@@ -79,12 +79,16 @@ body {
   border-radius: 5px;
   height: 100%;
 }
-
+@media screen and (max-width: 767px) {
+  .texto a.mail {
+    font-size: 12px; 
+    margin: 10px;
+  }
+}
 @media screen and (min-width: 768px) {
   .main {
     flex-direction: row;
   }
-
   .formulario {
     grid-template-columns: 1fr 1fr;
     margin: 30px;
