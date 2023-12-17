@@ -2,7 +2,10 @@
 import Navigation from "../../components/Navigation.astro";
 import Fab from "../../components/Fab.astro";
 import Footer from "../../components/Footer.astro";
-import "../../styles/global.css"
+import Returnbutton from "../../components/returnbutton.astro"; 
+import "../../styles/global.css";
+import "../../styles/services/comerciales.css";
+import "../../styles/services/banner.css";
 ---
 
 <!doctype html>
@@ -12,10 +15,15 @@ import "../../styles/global.css"
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Informes Comerciales Exprés</title>
+    <title>ASESOLECO | Informes Comerciales</title>
   </head>
   <body>
     <Navigation />
+    <div class="banner">
+      <img class="bannerimg" src="/images/comercial.jpg"></img>
+      <p class="tittle">INFORMES COMERCIALES EXPRÉS</p>
+    </div>
+    <Returnbutton/>
     <Fab />
     <Footer />
   </body>

@@ -2,7 +2,10 @@
 import Navigation from "../../components/Navigation.astro";
 import Fab from "../../components/Fab.astro";
 import Footer from "../../components/Footer.astro";
+import Returnbutton from "../../components/returnbutton.astro"; 
 import "../../styles/global.css";
+import "../../styles/services/comerciales.css";
+import "../../styles/services/banner.css";
 ---
 
 <!doctype html>
@@ -16,6 +19,11 @@ import "../../styles/global.css";
   </head>
   <body>
     <Navigation />
+    <div class="banner">
+      <img class="bannerimg" src="/images/comercial.jpg"></img>
+      <p class="tittle" style="top:10%">CONSULTAS DE REGISTRO PUBLICO DE PROPIEDAD Y COMERCIO</p>
+    </div>
+    <Returnbutton/>
     <Fab />
     <Footer />
   </body>
