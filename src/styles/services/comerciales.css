@@ -29,7 +29,10 @@
 }
  
 @media screen and (max-width: 768px) {
-    
+    .contain:hover {
+        transition: none;
+        transform: none;
+    }
     .contain {
         padding: 15px;
         width: 85%;
