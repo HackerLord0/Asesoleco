@@ -4,7 +4,17 @@ import Footer from "../components/Footer.astro";
 import Fab from "../components/Fab.astro";
 import "../styles/global.css";
 ---
-
+<style>
+  .img {
+    align-items: center; text-align: center; 
+  }
+    @media screen and (max-width: 767px) {
+  img {
+    width: 100%;
+  
+}
+  }
+</style>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
@@ -14,12 +24,12 @@ import "../styles/global.css";
       content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <meta name="generator" content={Astro.generator} />
-    <title>FAQ ChatBot | ASESOLECO</title>
+    <title>Dev-Support | ASESOLECO</title>
   </head>
   <body>
     <Navigation />
 
-    <div class="img" style="align-items: center; text-align: center;">
+  <div class="img">
         <img src="/images/mantenimiento.jpg" alt="mantenimiento web">
       </div>
       

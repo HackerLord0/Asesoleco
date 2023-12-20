@@ -44,6 +44,7 @@ body {
 
 .serviciostxt {
   margin: 30px;
+  margin-bottom: 60px;
 }
 .txtserv{
   color: black;
@@ -55,7 +56,7 @@ body {
   grid-template-columns: repeat(4, 1fr); 
   gap: 60px; 
   justify-content: space-around;
-  margin: 20px;
+  margin: 30px;
 }
 
 .card {
