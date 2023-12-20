@@ -5,16 +5,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST["email"];
     $telefono = $_POST["teléfono"];
     $mensaje = $_POST["mensaje"];
-
+    
     $destinatario = "ventas@asesoleco.com";
     $asunto = "Nuevo mensaje de contacto";
     $cuerpoCorreo = "Nombre: " . $nombre . "\n"
         . "Apellidos: " . $apellidos . "\n"
         . "Correo: " . $correo . "\n"
-        . "Teléfono: " . $telefono . "\n"
+        . "Telefono: " . $telefono . "\n"
         . "Mensaje: " . $mensaje;
+        $cabeceras = "From: Contacto_Sitio_Web_Asesoleco.com <" . $destinatario . ">\r\n";
 
-    if (mail($destinatario, $asunto, $cuerpoCorreo)) {
+        // Intenta enviar el correo
+        if (mail($destinatario, $asunto, $cuerpoCorreo, $cabeceras)) {
         // Mensaje enviado correctamente, muestra el mensaje y redirige al usuario
         echo '<script>alert("Mensaje enviado correctamente. Pronto te contactaremos.");</script>';
         echo '<script>window.location.href = "/index.html";</script>';
