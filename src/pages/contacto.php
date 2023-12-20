@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $telefono = $_POST["teléfono"];
     $mensaje = $_POST["mensaje"];
 
-    $destinatario = "nobleteamxd@gmail.com";
+    $destinatario = "ventas@asesoleco.com";
     $asunto = "Nuevo mensaje de contacto";
     $cuerpoCorreo = "Nombre: " . $nombre . "\n"
         . "Apellidos: " . $apellidos . "\n"
