@@ -15,18 +15,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         . "Mensaje: " . $mensaje;
 
     if (mail($destinatario, $asunto, $cuerpoCorreo)) {
-        echo '<script>alert("Mensaje enviado correctamente. Pronto te contactaremos");</script>';
-        header('Location: index.html');
+        // Mensaje enviado correctamente, muestra el mensaje y redirige al usuario
+        echo '<script>alert("Mensaje enviado correctamente. Pronto te contactaremos.");</script>';
+        echo '<script>window.location.href = "/index.html";</script>';
         exit;
     } else {
         // Ha ocurrido un error, muestra un mensaje y redirige al usuario
         echo '<script>alert("Ha ocurrido un error al enviar el mensaje.");</script>';
-        header('Location: index.html');
+        echo '<script>window.location.href = "/index.html";</script>';
         exit;
     }
 } else {
     // Método no permitido, redirige al usuario
-    header('Location: index.html');
+    header('Location: /index.html');
     exit;
 }
 ?>
