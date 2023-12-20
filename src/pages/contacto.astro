@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Fab from "../components/Fab.astro";
 import "../styles/global.css";
 import "../styles/contacto.css";
+import Btncontacto from "../components/btncontacto.astro"
 ---
 
 <html lang="en">
@@ -91,7 +92,7 @@ import "../styles/contacto.css";
 
       <div class="form">
         <h1>Nosotros te contactamos.</h1>
-        <form class="formulario" action="/contacto.php" method="post">
+        <form class="formulario"  method="POST" action="contacto.php">
           <p>
             <label>Nombre (s):</label>
             <input type="text" name="nombre" required />
@@ -113,7 +114,8 @@ import "../styles/contacto.css";
             <textarea name="mensaje" required></textarea>
           </p>
           <p class="full">
-            <button class="boton-enviar">Enviar</button>
+         
+            <Btncontacto />
           </p>
         </form>
       </div>
@@ -122,4 +124,6 @@ import "../styles/contacto.css";
     <Fab />
     <Footer />
   </body>
+  
 </html>
+
