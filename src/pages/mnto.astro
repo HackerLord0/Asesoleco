@@ -1,0 +1,29 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import Fab from "../components/Fab.astro";
+import "../styles/global.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>FAQ ChatBot | ASESOLECO</title>
+  </head>
+  <body>
+    <Navigation />
+
+    <div class="img" style="align-items: center; text-align: center;">
+        <img src="/images/mantenimiento.jpg" alt="mantenimiento web">
+      </div>
+      
+    <Fab />
+    <Footer />
+  </body>
+</html>
