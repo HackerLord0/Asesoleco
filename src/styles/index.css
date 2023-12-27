@@ -156,6 +156,14 @@ p{
     align-items: center;
     text-align: center;
   }
+  .welcome-header {
+    background-color: #ebf5fb;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    position: relative;
+   
+  }
   .asesoriaimg,
   .servicioimg {
     opacity: 1;
