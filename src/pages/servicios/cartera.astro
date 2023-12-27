@@ -2,7 +2,7 @@
 import Navigation from "../../components/Navigation.astro";
 import Fab from "../../components/Fab.astro";
 import Footer from "../../components/Footer.astro";
-import Returnbutton from "../../components/returnbutton.astro"; 
+import Returnbutton from "../../components/returnbutton.astro";
 import "../../styles/global.css";
 import "../../styles/services/comerciales.css";
 import "../../styles/services/banner.css";
@@ -11,40 +11,52 @@ import "../../styles/services/banner.css";
 <!doctype html>
 <html lang="es">
   <head>
+    <title>ASESOLECO | Informes Comerciales</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Informes Comerciales</title>
   </head>
   <body>
     <Navigation />
     <div class="banner">
-      <img class="bannerimg" src="/images/cartera2.jpg"></img>
-      <p class="tittle">RECUPERACION DE CARTERA VENCIDA</p>
+      <img class="bannerimg" src="/images/cartera2.jpg" alt="cartera" />
     </div>
-    <div class="contain">
-      <p>Realizamos cobranza judicial, extrajudicial y administrativa. Compramos carteras vencidas con previo análisis.</p>
-  
-      <p>Nuestro servicio integral combina estrategias de cobranza legal, extrajudicial y administrativa para garantizar una recuperación eficiente y ética. Descubre cómo podemos ayudarte a optimizar tus procesos de cobranza y maximizar la recuperación de activos.</p>
-  
-      <p>Tipos de cobranza:</p>
-      <ul>
-          <li>Cobranza Extrajudicial Persuasiva</li>
-          <li>Cobranza Legal Especializada con tarifas de recuperación de 5 al 19%</li>
-          <li>Administración de Cartera Vencida</li>
-      </ul>
-  
-      <p>Ventajas:</p>
-      <ul>
-          <li>No hay cobro anticipado de tarifas, solo hasta la recuperación efectiva.</li>
-          <li>Tecnología Avanzada de Seguimiento.</li>
-          <li>Transparencia y Comunicación Continua.</li>
-      </ul>
-  </div>
-  
-    <Returnbutton/>
-    <Fab />
-    <Footer />
+    <p class="tittle">RECUPERACION DE CARTERA VENCIDA</p>
   </body>
+  <div class="contain">
+    <p>
+      Realizamos cobranza judicial, extrajudicial y administrativa. Compramos
+      carteras vencidas con previo análisis.
+    </p>
+
+    <p>
+      Nuestro servicio integral combina estrategias de cobranza legal,
+      extrajudicial y administrativa para garantizar una recuperación eficiente
+      y ética. Descubre cómo podemos ayudarte a optimizar tus procesos de
+      cobranza y maximizar la recuperación de activos.
+    </p>
+
+    <p>Tipos de cobranza:</p>
+    <ul>
+      <li>Cobranza Extrajudicial Persuasiva</li>
+      <li>
+        Cobranza Legal Especializada con tarifas de recuperación de 5 al 19%
+      </li>
+      <li>Administración de Cartera Vencida</li>
+    </ul>
+
+    <p>Ventajas:</p>
+    <ul>
+      <li>
+        No hay cobro anticipado de tarifas, solo hasta la recuperación efectiva.
+      </li>
+      <li>Tecnología Avanzada de Seguimiento.</li>
+      <li>Transparencia y Comunicación Continua.</li>
+    </ul>
+  </div>
+
+  <Returnbutton />
+  <Fab />
+  <Footer />
 </html>

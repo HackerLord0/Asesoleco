@@ -2,7 +2,7 @@
 import Navigation_us from "../../../components/Navigation_us.astro";
 import Fab from "../../../components/Fab.astro";
 import Footer_us from "../../../components/Footer_us.astro";
-import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import Returnbutton_us from "../../../components/returnbutton_us.astro";
 import "../../../styles/global.css";
 import "../../../styles/services/alertas.css";
 import "../../../styles/services/banner.css";
@@ -11,40 +11,48 @@ import "../../../styles/services/banner.css";
 <!doctype html>
 <html lang="en">
   <head>
+    <title>ASESOLECO | Commercial Reports</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Commercial Reports</title>
   </head>
   <body>
     <Navigation_us />
     <div class="banner">
-      <img class="bannerimg" src="/images/cartera2.jpg"></img>
-      <p class="tittle">RECOVERY OF OVERDUE PORTFOLIO</p>
+      <img class="bannerimg" src="/images/cartera2.jpg" alt="Money" />
     </div>
-    <div class="contain">
-      <p>We carry out judicial, extrajudicial, and administrative collection. We purchase overdue portfolios with prior analysis.</p>
-  
-      <p>Our comprehensive service combines legal, extrajudicial, and administrative collection strategies to ensure efficient and ethical recovery. Discover how we can help you optimize your collection processes and maximize asset recovery.</p>
-  
-      <p>Types of collection:</p>
-      <ul>
-          <li>Persuasive Extrajudicial Collection</li>
-          <li>Specialized Legal Collection with recovery rates from 5 to 19%</li>
-          <li>Management of Overdue Portfolio</li>
-      </ul>
-  
-      <p>Advantages:</p>
-      <ul>
-          <li>No advance payment of fees, only upon effective recovery.</li>
-          <li>Advanced Tracking Technology.</li>
-          <li>Transparency and Continuous Communication.</li>
-      </ul>
-  </div>
-  
-    <Returnbutton_us/>
-    <Fab />
-    <Footer_us />
+    <p class="tittle">RECOVERY OF OVERDUE PORTFOLIO</p>
   </body>
+  <div class="contain">
+    <p>
+      We carry out judicial, extrajudicial, and administrative collection. We
+      purchase overdue portfolios with prior analysis.
+    </p>
+
+    <p>
+      Our comprehensive service combines legal, extrajudicial, and
+      administrative collection strategies to ensure efficient and ethical
+      recovery. Discover how we can help you optimize your collection processes
+      and maximize asset recovery.
+    </p>
+
+    <p>Types of collection:</p>
+    <ul>
+      <li>Persuasive Extrajudicial Collection</li>
+      <li>Specialized Legal Collection with recovery rates from 5 to 19%</li>
+      <li>Management of Overdue Portfolio</li>
+    </ul>
+
+    <p>Advantages:</p>
+    <ul>
+      <li>No advance payment of fees, only upon effective recovery.</li>
+      <li>Advanced Tracking Technology.</li>
+      <li>Transparency and Continuous Communication.</li>
+    </ul>
+  </div>
+
+  <Returnbutton_us />
+  <Fab />
+  <Footer_us />
 </html>

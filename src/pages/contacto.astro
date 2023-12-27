@@ -4,17 +4,17 @@ import Footer from "../components/Footer.astro";
 import Fab from "../components/Fab.astro";
 import "../styles/global.css";
 import "../styles/contacto.css";
-import Btncontacto from "../components/btncontacto.astro"
+import Btncontacto from "../components/btncontacto.astro";
 ---
 
 <html lang="es">
   <head>
+    <meta name="robots" content="index, follow" />
+    <title>Contacto | ASESOLECO</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="robots" content="index, follow" /> 
-    <title>Contacto | ASESOLECO</title>
   </head>
   <body style="margin: 0;">
     <Navigation />
@@ -27,38 +27,42 @@ import Btncontacto from "../components/btncontacto.astro"
           <strong>Móvil:</strong><br />
           <i class="fa fa-mobile"></i>
           <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
-            (55) 40-92-33-74</a>
+            (55) 40-92-33-74</a
+          >
         </p>
         <p>
           <strong>Conmutador:</strong><br />
           <i class="fa fa-hashtag"></i>
           <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
-            (55) 58-85-60-30</a><br /><br />
-            <i class="fa fa-hashtag"></i>
+            (55) 58-85-60-30</a
+          ><br /><br />
+          <i class="fa fa-hashtag"></i>
           <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
-            (55) 75-77-89-30</a>
+            (55) 75-77-89-30</a
+          >
         </p>
         <p>
           <strong>Fax:</strong><br />
           <i class="fa fa-fax"></i>
           <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
-            (52) 55-10-84-73-19</a>
+            (52) 55-10-84-73-19</a
+          >
         </p>
-        
 
         <h3>Directorio:</h3>
 
         <p>
           <strong>Ventas:</strong><br />
-          <i class="fa fa-envelope"></i><a class="mail"
+          <i class="fa fa-envelope"></i><a
+            class="mail"
             href="mailto:ventas@plataformacontralamorosidad.com"
-            style="text-decoration: underline;">ventas@plataformacontralamorosidad.com</a
+            style="text-decoration: underline;"
+            >ventas@plataformacontralamorosidad.com</a
           >
           <br /><br />
           <i class="fa fa-envelope"></i><a
             href="mailto:plataforma.ventas@asesoleco.com"
-            style="text-decoration: underline;"
-            >ventas@asesoleco.com</a
+            style="text-decoration: underline;">ventas@asesoleco.com</a
           >
         </p>
 
@@ -75,28 +79,29 @@ import Btncontacto from "../components/btncontacto.astro"
         <h3>Corporativo:</h3>
         <p>
           <i class="fa fa-map"></i>
-          Pafnuncio Padilla 26, 4to piso, Cd. Satélite, 53100 Naucalpan de Juárez, Méx.
+           Pafnuncio Padilla 26, 4to piso, Cd. Satélite, 53100 Naucalpan de
+          Juárez, Méx.
         </p>
 
         <h3>Texas office</h3>
         <p>
           <i class="fa fa-map"></i>
-          17806 Int 121 Intertate Highway 10, San Antonio Texas</p>
-          <p>
+           17806 Int 121 Intertate Highway 10, San Antonio Texas
+        </p>
+        <p>
           <i class="fa fa-fax"></i> +1 647-361-6440
         </p>
 
         <h3>Guadalajara oficinas</h3>
         <p>
           <i class="fa fa-map"></i>
-          Av. Acueducto 6075 Local A,
-          Puerta de Hierro Zapopan Jalisco
+           Av. Acueducto 6075 Local A, Puerta de Hierro Zapopan Jalisco
         </p>
       </div>
 
       <div class="form">
         <h1>Nosotros te contactamos.</h1>
-        <form class="formulario"  method="POST" action="contacto.php">
+        <form class="formulario" method="POST" action="contacto.php">
           <p>
             <label>Nombre (s):</label>
             <input type="text" name="nombre" required />
@@ -118,7 +123,6 @@ import Btncontacto from "../components/btncontacto.astro"
             <textarea name="mensaje" required></textarea>
           </p>
           <p class="full">
-         
             <Btncontacto />
           </p>
         </form>
@@ -128,6 +132,4 @@ import Btncontacto from "../components/btncontacto.astro"
     <Fab />
     <Footer />
   </body>
-  
 </html>
-

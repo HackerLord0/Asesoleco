@@ -2,7 +2,7 @@
 import Navigation_us from "../../../components/Navigation_us.astro";
 import Fab from "../../../components/Fab.astro";
 import Footer_us from "../../../components/Footer_us.astro";
-import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import Returnbutton_us from "../../../components/returnbutton_us.astro";
 import "../../../styles/global.css";
 import "../../../styles/services/alertas.css";
 import "../../../styles/services/banner.css";
@@ -11,41 +11,57 @@ import "../../../styles/services/banner.css";
 <!doctype html>
 <html lang="en">
   <head>
+    <title>ASESOLECO | Commercial Reports</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Commercial Reports</title>
   </head>
   <body>
     <Navigation_us />
     <div class="banner">
-      <img class="bannerimg" src="/images/comercial.jpg"></img>
-      <p class="tittle">COMMERCIAL REPORTS</p>
+      <img class="bannerimg" src="/images/comercial.jpg" alt="commerce" />
     </div>
-    <div class="contain">
-      <p>Get accurate and up-to-date information about your customers, business partners, suppliers, and employees. Our detailed reports will provide you with a comprehensive insight to make informed and strategic decisions. They include The FICO® Score is a credit scoring model developed in the United States, with delivery within 1 to 4 days.</p>
-      
-      <p>Features of our commercial or credit reports:</p>
-      
-      <ul>
-        <li>Fraud Prevention and Illicit Activities.</li>
-        <li>Reduction of Credit Risk.</li>
-        <li>Immediate delivery or a maximum of 4 business days.</li>
-        <li>Report update at no cost for 6 months.</li>
-        <li>Visit to each investigated party to verify their establishment.</li>
-        <li>In case of default, debt recovery is managed by our firm.</li>
-        <li>Efficiency in the Evaluation of Customers, suppliers, and employees.</li>
-        <li>Integrated artificial intelligence in all our systems.</li>
-        <li>Coverage in Mexico, the United States, Canada, Latin America, and South America.</li>
-        <li>Cost is uniform throughout Mexico (1 unit = 1 report).</li>
-      </ul>
-      
-      <p>In summary, the use of commercial reports for granting credits not only optimizes the decision-making process but also significantly reduces risks associated with financial transactions, thus promoting a safer and more transparent business environment.</p>
-    </div>
-    
-    <Returnbutton_us/>
-    <Fab />
-    <Footer_us />
+    <p class="tittle">COMMERCIAL REPORTS</p>
   </body>
+  <div class="contain">
+    <p>
+      Get accurate and up-to-date information about your customers, business
+      partners, suppliers, and employees. Our detailed reports will provide you
+      with a comprehensive insight to make informed and strategic decisions.
+      They include The FICO® Score is a credit scoring model developed in the
+      United States, with delivery within 1 to 4 days.
+    </p>
+
+    <p>Features of our commercial or credit reports:</p>
+
+    <ul>
+      <li>Fraud Prevention and Illicit Activities.</li>
+      <li>Reduction of Credit Risk.</li>
+      <li>Immediate delivery or a maximum of 4 business days.</li>
+      <li>Report update at no cost for 6 months.</li>
+      <li>Visit to each investigated party to verify their establishment.</li>
+      <li>In case of default, debt recovery is managed by our firm.</li>
+      <li>
+        Efficiency in the Evaluation of Customers, suppliers, and employees.
+      </li>
+      <li>Integrated artificial intelligence in all our systems.</li>
+      <li>
+        Coverage in Mexico, the United States, Canada, Latin America, and South
+        America.
+      </li>
+      <li>Cost is uniform throughout Mexico (1 unit = 1 report).</li>
+    </ul>
+
+    <p>
+      In summary, the use of commercial reports for granting credits not only
+      optimizes the decision-making process but also significantly reduces risks
+      associated with financial transactions, thus promoting a safer and more
+      transparent business environment.
+    </p>
+  </div>
+
+  <Returnbutton_us />
+  <Fab />
+  <Footer_us />
 </html>

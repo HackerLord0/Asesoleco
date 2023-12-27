@@ -2,7 +2,7 @@
 import Navigation from "../../components/Navigation.astro";
 import Fab from "../../components/Fab.astro";
 import Footer from "../../components/Footer.astro";
-import Returnbutton from "../../components/returnbutton.astro"; 
+import Returnbutton from "../../components/returnbutton.astro";
 import "../../styles/global.css";
 import "../../styles/services/comerciales.css";
 import "../../styles/services/banner.css";
@@ -11,44 +11,65 @@ import "../../styles/services/banner.css";
 <!doctype html>
 <html lang="es">
   <head>
+    <title>ASESOLECO | Plataforma online y Buro jurídico.</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Plataforma online y Buro jurídico.</title>
   </head>
   <body>
     <Navigation />
     <div class="banner">
-      <img class="bannerimg" src="/images/buroonline.jpg"></img>
-      <p class="tittle">PLATAFORMA ONLINE Y BURO JURIDICO</p>
+      <img class="bannerimg" src="/images/buroonline.jpg" alt="plataforma" />
     </div>
-    <div class="contain">
-      <p>Protege tu empresa de manera integral con nuestra Plataforma online en tiempo real. Desde la prevención de morosos hasta la detección de fraudes, incobrables, demandados y demandantes. Ofrecemos soluciones completas para garantizar la seguridad y estabilidad financiera de tu negocio. Descubre cómo nuestra plataforma puede ser tu socio estratégico en la gestión de riesgos financieros.</p>
-  
-      <p>Ventajas:</p>
-      
-      <ul>
-          <li>Evaluación de Riesgos en Tiempo Real.</li>
-          <li>Detección de Fraudes Sofisticada.</li>
-          <li>Cuentas enviadas a incobrables.</li>
-          <li>Prevención de Morosos e Incobrables.</li>
-          <li>Monitoreo Continuo de Riesgos.</li>
-          <li>Acceso a Registros Legales Completos.</li>
-          <li>Facilidad de Búsqueda y Navegación.</li>
-          <li>Información Actualizada en Tiempo Real.</li>
-          <li>Perfil Detallado de Demandados.</li>
-      </ul>
-  
-      <p>Nuestra plataforma se mantiene actualizada con las normativas y regulaciones legales vigentes. Esto asegura que estés siempre en cumplimiento y reduces el riesgo de sanciones relacionadas con prácticas comerciales.</p>
-  
-      <p>Excelente herramienta: tu fuente confiable de información legal y comercial que proporciona acceso a registros exhaustivos de demandas y demandados y morosidad activa. Nuestra herramienta esencial está diseñada para ofrecerte una visión detallada y actualizada de miles de registros, brindándote la información necesaria para tomar decisiones informadas.</p>
-  
-      <p>Descubre cómo nuestra plataforma puede ser tu aliado en la gestión de riesgos comerciales y crediticios.</p>
-  </div>
-  
-    <Returnbutton/>
-    <Fab />
-    <Footer />
+    <p class="tittle">PLATAFORMA ONLINE Y BURO JURIDICO</p>
   </body>
+  <div class="contain">
+    <p>
+      Protege tu empresa de manera integral con nuestra Plataforma online en
+      tiempo real. Desde la prevención de morosos hasta la detección de fraudes,
+      incobrables, demandados y demandantes. Ofrecemos soluciones completas para
+      garantizar la seguridad y estabilidad financiera de tu negocio. Descubre
+      cómo nuestra plataforma puede ser tu socio estratégico en la gestión de
+      riesgos financieros.
+    </p>
+
+    <p>Ventajas:</p>
+
+    <ul>
+      <li>Evaluación de Riesgos en Tiempo Real.</li>
+      <li>Detección de Fraudes Sofisticada.</li>
+      <li>Cuentas enviadas a incobrables.</li>
+      <li>Prevención de Morosos e Incobrables.</li>
+      <li>Monitoreo Continuo de Riesgos.</li>
+      <li>Acceso a Registros Legales Completos.</li>
+      <li>Facilidad de Búsqueda y Navegación.</li>
+      <li>Información Actualizada en Tiempo Real.</li>
+      <li>Perfil Detallado de Demandados.</li>
+    </ul>
+
+    <p>
+      Nuestra plataforma se mantiene actualizada con las normativas y
+      regulaciones legales vigentes. Esto asegura que estés siempre en
+      cumplimiento y reduces el riesgo de sanciones relacionadas con prácticas
+      comerciales.
+    </p>
+
+    <p>
+      Excelente herramienta: tu fuente confiable de información legal y
+      comercial que proporciona acceso a registros exhaustivos de demandas y
+      demandados y morosidad activa. Nuestra herramienta esencial está diseñada
+      para ofrecerte una visión detallada y actualizada de miles de registros,
+      brindándote la información necesaria para tomar decisiones informadas.
+    </p>
+
+    <p>
+      Descubre cómo nuestra plataforma puede ser tu aliado en la gestión de
+      riesgos comerciales y crediticios.
+    </p>
+  </div>
+
+  <Returnbutton />
+  <Fab />
+  <Footer />
 </html>

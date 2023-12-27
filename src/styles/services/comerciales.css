@@ -1,44 +1,44 @@
-.contain { 
-    margin: 50px auto; 
-    box-shadow: 0 0 10px 0 rgba(42, 44, 44, 0.53);
-    border: 1px solid #ccc;
-    padding: 50px;
-    transition: transform 0.3s;
-    background-color: rgb(232, 235, 235);
-    width:85%;
-    border-radius: 5px;
+.contain {
+  margin: 50px auto;
+  box-shadow: 0 0 10px 0 rgba(42, 44, 44, 0.53);
+  border: 1px solid #ccc;
+  padding: 50px;
+  transition: transform 0.3s;
+  background-color: rgb(232, 235, 235);
+  width: 85%;
+  border-radius: 5px;
 }
 
 .contain:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .contain p {
-    color: black;  
-    font-size: 18px; 
+  color: black;
+  font-size: 18px;
 }
 
 .contain ul {
-    list-style-type: disc; 
-    padding-left: 80px;
-    text-align: left;
+  list-style-type: disc;
+  padding-left: 80px;
+  text-align: left;
 }
 
 .contain ul li {
-    font-weight: bold; 
+  font-weight: bold;
 }
- 
+
 @media screen and (max-width: 768px) {
-    .contain:hover {
-        transition: none;
-        transform: none;
-    }
-    .contain {
-        padding: 15px;
-        width: 85%;
-    }
-    .contain ul {
-        padding-left: 20px;
-        text-align: left;
-    }
+  .contain:hover {
+    transition: none;
+    transform: none;
+  }
+  .contain {
+    padding: 15px;
+    width: 85%;
+  }
+  .contain ul {
+    padding-left: 20px;
+    text-align: left;
+  }
 }

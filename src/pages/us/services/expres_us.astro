@@ -2,45 +2,58 @@
 import Navigation_us from "../../../components/Navigation_us.astro";
 import Fab from "../../../components/Fab.astro";
 import Footer_us from "../../../components/Footer_us.astro";
-import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import Returnbutton_us from "../../../components/returnbutton_us.astro";
 import "../../../styles/global.css";
 import "../../../styles/services/alertas.css";
 import "../../../styles/services/banner.css";
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
+    <title>ASESOLECO | Commercial Reports</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Commercial Reports</title>
   </head>
   <body>
     <Navigation_us />
     <div class="banner">
-      <img class="bannerimg" src="/images/informer.jpg"></img>
-      <p class="tittle">EXPRESS COMMERCIAL REPORTS</p>
+      <img class="bannerimg" src="/images/informer.jpg" alt="informer" />
     </div>
-    <div class="contain">
-      <p>Immediate delivery or maximum in 12 hours. Our Express Report provides a quick and accurate insight into the creditworthiness of your business partners, potential clients, and suppliers. It has the same benefits as the commercial report; however, the only difference is that the investigated party is not visited.</p>
-  
-      <p>Advantages:</p>
-      
-      <ul>
-          <li>Instant Risk Assessment.</li>
-          <li>Agility and Efficiency in Decision Making: Speed is essential in the business world.</li>
-          <li>Clear and Accessible Data.</li>
-          <li>Report update at no cost for 6 months.</li>
-          <li>Fraud Prevention and Illicit Activities.</li>
-          <li>Reduction of Credit Risk.</li>
-          <li>Coverage in all of Mexico, the United States, Canada, Latin America, and South America.</li>
-          <li>Cost is the same throughout Mexico. (1 unit = report)</li>
-      </ul>
-  </div>
-  
-    <Returnbutton_us/>
-    <Fab />
-    <Footer_us />
+    <p class="tittle">EXPRESS COMMERCIAL REPORTS</p>
   </body>
+  <div class="contain">
+    <p>
+      Immediate delivery or maximum in 12 hours. Our Express Report provides a
+      quick and accurate insight into the creditworthiness of your business
+      partners, potential clients, and suppliers. It has the same benefits as
+      the commercial report; however, the only difference is that the
+      investigated party is not visited.
+    </p>
+
+    <p>Advantages:</p>
+
+    <ul>
+      <li>Instant Risk Assessment.</li>
+      <li>
+        Agility and Efficiency in Decision Making: Speed is essential in the
+        business world.
+      </li>
+      <li>Clear and Accessible Data.</li>
+      <li>Report update at no cost for 6 months.</li>
+      <li>Fraud Prevention and Illicit Activities.</li>
+      <li>Reduction of Credit Risk.</li>
+      <li>
+        Coverage in all of Mexico, the United States, Canada, Latin America, and
+        South America.
+      </li>
+      <li>Cost is the same throughout Mexico. (1 unit = report)</li>
+    </ul>
+  </div>
+
+  <Returnbutton_us />
+  <Fab />
+  <Footer_us />
 </html>

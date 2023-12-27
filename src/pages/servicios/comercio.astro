@@ -2,7 +2,7 @@
 import Navigation from "../../components/Navigation.astro";
 import Fab from "../../components/Fab.astro";
 import Footer from "../../components/Footer.astro";
-import Returnbutton from "../../components/returnbutton.astro"; 
+import Returnbutton from "../../components/returnbutton.astro";
 import "../../styles/global.css";
 import "../../styles/services/comerciales.css";
 import "../../styles/services/banner.css";
@@ -11,35 +11,48 @@ import "../../styles/services/banner.css";
 <!doctype html>
 <html lang="es">
   <head>
+    <title>
+      ASESOLECO | Consultas de Registro Público de la Propiedad y Comercio.
+    </title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Consultas de Registro Público de la Propiedad y Comercio.</title>
   </head>
   <body>
     <Navigation />
     <div class="banner">
-      <img class="bannerimg" src="/images/propiedad.jpeg"></img>
-      <p class="tittle" style="top:10%">CONSULTAS DE REGISTRO PUBLICO DE PROPIEDAD Y COMERCIO</p>
+      <img class="bannerimg" src="/images/propiedad.jpeg" alt="comercio" />
     </div>
-    <div class="contain">
-      <p>Nuestro servicio se proporciona en todo México, agilizamos todos los trámites relacionados con la información registral, permitiéndote acceder fácilmente a la documentación clave que necesitas.</p>
-  
-      <p>Podemos ser tu aliado en el manejo eficiente de registros de:</p>
-      
-      <ul>
-          <li>Consulta de Propiedades y empresas</li>
-          <li>Certificados de libertad de gravamen.</li>
-          <li>Búsqueda de propietarios de bienes inmuebles.</li>
-          <li>Consultas de constitución de empresas.</li>
-      </ul>
-  
-      <p>Contamos con un equipo de profesionales especializados en registros públicos. Ofrecemos asesoramiento experto para interpretar y entender la información proporcionada, asegurando que tomes decisiones informadas basadas en datos confiables.</p>
-  </div>
-  
-    <Returnbutton/>
-    <Fab />
-    <Footer />
+    <p class="tittle" style="top:10%">
+      CONSULTAS DE REGISTRO PUBLICO DE PROPIEDAD Y COMERCIO
+    </p>
   </body>
+  <div class="contain">
+    <p>
+      Nuestro servicio se proporciona en todo México, agilizamos todos los
+      trámites relacionados con la información registral, permitiéndote acceder
+      fácilmente a la documentación clave que necesitas.
+    </p>
+
+    <p>Podemos ser tu aliado en el manejo eficiente de registros de:</p>
+
+    <ul>
+      <li>Consulta de Propiedades y empresas</li>
+      <li>Certificados de libertad de gravamen.</li>
+      <li>Búsqueda de propietarios de bienes inmuebles.</li>
+      <li>Consultas de constitución de empresas.</li>
+    </ul>
+
+    <p>
+      Contamos con un equipo de profesionales especializados en registros
+      públicos. Ofrecemos asesoramiento experto para interpretar y entender la
+      información proporcionada, asegurando que tomes decisiones informadas
+      basadas en datos confiables.
+    </p>
+  </div>
+
+  <Returnbutton />
+  <Fab />
+  <Footer />
 </html>

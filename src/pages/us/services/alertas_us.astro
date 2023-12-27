@@ -2,7 +2,7 @@
 import Navigation_us from "../../../components/Navigation_us.astro";
 import Fab from "../../../components/Fab.astro";
 import Footer_us from "../../../components/Footer_us.astro";
-import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import Returnbutton_us from "../../../components/returnbutton_us.astro";
 import "../../../styles/global.css";
 import "../../../styles/services/alertas.css";
 import "../../../styles/services/banner.css";
@@ -11,39 +11,52 @@ import "../../../styles/services/banner.css";
 <!doctype html>
 <html lang="en">
   <head>
+    <title>ASESOLECO | Alert System.</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Alert System.</title>
   </head>
   <body>
     <Navigation_us />
     <div class="banner">
-      <img class="bannerimg" src="/images/alertasbanner.jpg"></img>
-      <p class="tittle">ALERT SYSTEM</p>
+      <img class="bannerimg" src="/images/alertasbanner.jpg" alt="alerts" />
     </div>
-    <div class="contain">
-      <p>For debtors, frauds, and defendants in real-time. Our tool is designed to keep you one step ahead, providing critical information in real-time.</p>
-      
-      <p>Discover the key advantages we offer to protect your business interests:</p>
-      
-      <ul>
-          <li>Immediate Real-time Alerts.</li>
-          <li>Effective Debt Management.</li>
-          <li>Early Detection of Fraudulent Activities.</li>
-          <li>Customization of Alerts for debtor monitoring.</li>
-          <li>Optimization of Decision Making.</li>
-      </ul>
-      
-      <p>With real-time information about debtors, frauds, and defendants, optimizing your decision-making. You will be equipped with critical data that will allow you to assess risks, make informed decisions, and maintain the financial health of your company.</p>
-      
-      <p>Discover the power of anticipation with our tool; you will always be informed and prepared to face financial and legal challenges, ensuring the security and stability of your business.</p>
-  </div>
-  
-
-    <Returnbutton_us/>
-    <Fab />
-    <Footer_us />
+    <p class="tittle">ALERT SYSTEM</p>
   </body>
+  <div class="contain">
+    <p>
+      For debtors, frauds, and defendants in real-time. Our tool is designed to
+      keep you one step ahead, providing critical information in real-time.
+    </p>
+
+    <p>
+      Discover the key advantages we offer to protect your business interests:
+    </p>
+
+    <ul>
+      <li>Immediate Real-time Alerts.</li>
+      <li>Effective Debt Management.</li>
+      <li>Early Detection of Fraudulent Activities.</li>
+      <li>Customization of Alerts for debtor monitoring.</li>
+      <li>Optimization of Decision Making.</li>
+    </ul>
+
+    <p>
+      With real-time information about debtors, frauds, and defendants,
+      optimizing your decision-making. You will be equipped with critical data
+      that will allow you to assess risks, make informed decisions, and maintain
+      the financial health of your company.
+    </p>
+
+    <p>
+      Discover the power of anticipation with our tool; you will always be
+      informed and prepared to face financial and legal challenges, ensuring the
+      security and stability of your business.
+    </p>
+  </div>
+
+  <Returnbutton_us />
+  <Fab />
+  <Footer_us />
 </html>

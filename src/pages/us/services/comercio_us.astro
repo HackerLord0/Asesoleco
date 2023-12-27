@@ -2,43 +2,56 @@
 import Navigation_us from "../../../components/Navigation_us.astro";
 import Fab from "../../../components/Fab.astro";
 import Footer_us from "../../../components/Footer_us.astro";
-import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import Returnbutton_us from "../../../components/returnbutton_us.astro";
 import "../../../styles/global.css";
 import "../../../styles/services/alertas.css";
 import "../../../styles/services/banner.css";
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
+    <title>
+      ASESOLECO | Public Registry of Property and Commerce Inquiries.
+    </title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Public Registry of Property and Commerce Inquiries.</title>
   </head>
   <body>
     <Navigation_us />
     <div class="banner">
-      <img class="bannerimg" src="/images/propiedad.jpeg"></img>
-      <p class="tittle" style="top:10%">PUBLIC REGISTRY OF PROPERTY AND COMMERCE INQUIRIES</p>
+      <img class="bannerimg" src="/images/propiedad.jpeg" alt="bussines" />
     </div>
-    <div class="contain">
-      <p>Our service is provided throughout Mexico; we expedite all procedures related to registry information, allowing you easy access to key documentation you need.</p>
-  
-      <p>We can be your ally in the efficient handling of records for:</p>
-      
-      <ul>
-          <li>Property and business inquiries</li>
-          <li>Certificates of non-encumbrance.</li>
-          <li>Search for owners of real estate.</li>
-          <li>Company establishment consultations.</li>
-      </ul>
-  
-      <p>We have a team of professionals specialized in public records. We offer expert advice to interpret and understand the provided information, ensuring that you make informed decisions based on reliable data.</p>
-    </div>
-    
-    <Returnbutton_us/>
-    <Fab />
-    <Footer_us />
+    <p class="tittle" style="top:10%">
+      PUBLIC REGISTRY OF PROPERTY AND COMMERCE INQUIRIES
+    </p>
   </body>
+  <div class="contain">
+    <p>
+      Our service is provided throughout Mexico; we expedite all procedures
+      related to registry information, allowing you easy access to key
+      documentation you need.
+    </p>
+
+    <p>We can be your ally in the efficient handling of records for:</p>
+
+    <ul>
+      <li>Property and business inquiries</li>
+      <li>Certificates of non-encumbrance.</li>
+      <li>Search for owners of real estate.</li>
+      <li>Company establishment consultations.</li>
+    </ul>
+
+    <p>
+      We have a team of professionals specialized in public records. We offer
+      expert advice to interpret and understand the provided information,
+      ensuring that you make informed decisions based on reliable data.
+    </p>
+  </div>
+
+  <Returnbutton_us />
+  <Fab />
+  <Footer_us />
 </html>

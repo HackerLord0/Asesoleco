@@ -2,7 +2,7 @@
 import Navigation from "../../components/Navigation.astro";
 import Fab from "../../components/Fab.astro";
 import Footer from "../../components/Footer.astro";
-import Returnbutton from "../../components/returnbutton.astro"; 
+import Returnbutton from "../../components/returnbutton.astro";
 import "../../styles/global.css";
 import "../../styles/services/comerciales.css";
 import "../../styles/services/banner.css";
@@ -11,41 +11,58 @@ import "../../styles/services/banner.css";
 <!doctype html>
 <html lang="es">
   <head>
+    <title>ASESOLECO | Informes Comerciales</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>ASESOLECO | Informes Comerciales</title>
   </head>
   <body>
     <Navigation />
     <div class="banner">
-      <img class="bannerimg" src="/images/comercial.jpg"></img>
-      <p class="tittle">INFORMES COMERCIALES</p>
+      <img class="bannerimg" src="/images/comercial.jpg" alt="comerciales" />
     </div>
-    <div class="contain">
-      <p>Obtenga información precisa y actualizada sobre sus clientes, socios comerciales, proveedores y empleados. Nuestros informes detallados le proporcionarán una visión completa para tomar decisiones informadas y estratégicas. Contienen El FICO® Score es un modelo de puntuación crediticia desarrollado en Estados Unidos, con entrega de 1 a 4 dias.</p>
-      
-      <p>Características de nuestros informes comerciales o crediticios:</p>
-      
-      <ul>
-        <li>Prevención de Fraudes y Actividades Ilícitas.</li>
-        <li>Reducción del Riesgo Crediticio.</li>
-        <li>Entrega inmediata o máximo en 4 días hábiles.</li>
-        <li>Actualización del informe sin costo por 6 meses.</li>
-        <li>Visita a cada investigado para verificar su establecimiento.</li>
-        <li>En caso de incumplimiento, la recuperación de cobranza es gestionada por nuestro despacho.</li>
-        <li>Eficiencia en la Evaluación de Clientes, proveedores y empleados.</li>
-        <li>Inteligencia artificial integrada en todos nuestros sistemas.</li>
-        <li>Cobertura en México, Estados Unidos, Canadá, Latinoamérica y Sudamérica.</li>
-        <li>El costo es uniforme en todo México (1 unidad = 1 informe).</li>
-      </ul>
-      
-      <p>En resumen, la utilización de informes comerciales para otorgar créditos no solo optimiza el proceso de toma de decisiones, sino que también reduce significativamente los riesgos asociados con las transacciones financieras, fomentando así un entorno comercial más seguro y transparente.</p>
-    </div>
-    
-    <Returnbutton/>
-    <Fab />
-    <Footer />
+    <p class="tittle">INFORMES COMERCIALES</p>
   </body>
+  <div class="contain">
+    <p>
+      Obtenga información precisa y actualizada sobre sus clientes, socios
+      comerciales, proveedores y empleados. Nuestros informes detallados le
+      proporcionarán una visión completa para tomar decisiones informadas y
+      estratégicas. Contienen El FICO® Score es un modelo de puntuación
+      crediticia desarrollado en Estados Unidos, con entrega de 1 a 4 dias.
+    </p>
+
+    <p>Características de nuestros informes comerciales o crediticios:</p>
+
+    <ul>
+      <li>Prevención de Fraudes y Actividades Ilícitas.</li>
+      <li>Reducción del Riesgo Crediticio.</li>
+      <li>Entrega inmediata o máximo en 4 días hábiles.</li>
+      <li>Actualización del informe sin costo por 6 meses.</li>
+      <li>Visita a cada investigado para verificar su establecimiento.</li>
+      <li>
+        En caso de incumplimiento, la recuperación de cobranza es gestionada por
+        nuestro despacho.
+      </li>
+      <li>Eficiencia en la Evaluación de Clientes, proveedores y empleados.</li>
+      <li>Inteligencia artificial integrada en todos nuestros sistemas.</li>
+      <li>
+        Cobertura en México, Estados Unidos, Canadá, Latinoamérica y Sudamérica.
+      </li>
+      <li>El costo es uniforme en todo México (1 unidad = 1 informe).</li>
+    </ul>
+
+    <p>
+      En resumen, la utilización de informes comerciales para otorgar créditos
+      no solo optimiza el proceso de toma de decisiones, sino que también reduce
+      significativamente los riesgos asociados con las transacciones
+      financieras, fomentando así un entorno comercial más seguro y
+      transparente.
+    </p>
+  </div>
+
+  <Returnbutton />
+  <Fab />
+  <Footer />
 </html>

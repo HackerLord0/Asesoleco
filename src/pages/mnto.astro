@@ -4,15 +4,16 @@ import Footer from "../components/Footer.astro";
 import Fab from "../components/Fab.astro";
 import "../styles/global.css";
 ---
+
 <style>
   .img {
-    align-items: center; text-align: center; 
+    align-items: center;
+    text-align: center;
   }
-    @media screen and (max-width: 767px) {
-  img {
-    width: 100%;
-  
-}
+  @media screen and (max-width: 767px) {
+    img {
+      width: 100%;
+    }
   }
 </style>
 <html lang="es">
@@ -29,10 +30,10 @@ import "../styles/global.css";
   <body>
     <Navigation />
 
-  <div class="img">
-        <img src="/images/mantenimiento.jpg" alt="mantenimiento web">
-      </div>
-      
+    <div class="img">
+      <img src="/images/mantenimiento.jpg" alt="mantenimiento web" />
+    </div>
+
     <Fab />
     <Footer />
   </body>

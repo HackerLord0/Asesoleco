@@ -4,12 +4,15 @@ import Footer from "../components/Footer.astro";
 import Fab from "../components/Fab.astro";
 import "../styles/global.css";
 import "../styles/index.css";
-import Translatebtn from "../components/Translatebtn.astro";"../../components/Translatebtn.astro"
+import Translatebtn from "../components/Translatebtn.astro";
+("../../components/Translatebtn.astro");
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
+    <meta name="robots" content="index, follow" />
+    <title>ASESOLECO</title>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link
@@ -18,11 +21,15 @@ import Translatebtn from "../components/Translatebtn.astro";"../../components/Tr
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Como líderes en el mercado, ofrecemos una gama completa de servicios, incluyendo informes comerciales analíticos, recuperación de cartera vencida y servicios con alta tecnología con plataformas online únicas en América Latina." />
-    <meta name="keywords" content="asesoleco, financieros, creditos,crediticios, empresas, legales, servicios, asesorias, comerciales, bancarios, registros publicos, propiedades, perdidas, evitar" />
+    <meta
+      name="description"
+      content="Como líderes en el mercado, ofrecemos una gama completa de servicios, incluyendo informes comerciales analíticos, recuperación de cartera vencida y servicios con alta tecnología con plataformas online únicas en América Latina."
+    />
+    <meta
+      name="keywords"
+      content="asesoleco, financieros, creditos,crediticios, empresas, legales, servicios, asesorias, comerciales, bancarios, registros publicos, propiedades, perdidas, evitar"
+    />
     <meta name="author" content="ASESOLECO/Hckld@Dev" />
-    <meta name="robots" content="index, follow" /> 
-    <title>ASESOLECO</title>
   </head>
   <body style="margin: 0">
     <Navigation />
@@ -30,7 +37,9 @@ import Translatebtn from "../components/Translatebtn.astro";"../../components/Tr
     <div class="content">
       <h1 class="welcome-header">
         <span>GRUPO PCMM (PLATAFORMA CONTRA LA MOROSIDAD)</span>
-        <div class="translate" style="margin-left: auto; font-size: 15px;"><Translatebtn/></div>
+        <div class="translate" style="margin-left: auto; font-size: 15px;">
+          <Translatebtn />
+        </div>
       </h1>
 
       <section class="asesoria">
@@ -38,19 +47,34 @@ import Translatebtn from "../components/Translatebtn.astro";"../../components/Tr
           <h2 style=" font-size: 27px">
             ¿Por qué Asesoleco es la empresa preferida por nuestros clientes?
           </h2>
-          <p style=" font-size: 25px ">Porque te brindamos una calidad insuperable y beneficios únicos, entre ellos:</p>
+          <p style=" font-size: 25px ">
+            Porque te brindamos una calidad insuperable y beneficios únicos,
+            entre ellos:
+          </p>
           <ul class="list">
             <li>
-              Precios únicos y accesibles en América latina, sin sacrificar la calidad de nuestros productos y servicios.
+              Precios únicos y accesibles en América latina, sin sacrificar la
+              calidad de nuestros productos y servicios.
+            </li>
+            <li>Información 100% confiable y garantizada.</li>
+            <li>
+              Entrega de nuestros informes comerciales inmediatos o máximo en 4
+              días hábiles.
             </li>
             <li>
-              Información 100% confiable y garantizada.
+              Información actualizada con Boletines por sectores de entrega
+              mensual.
             </li>
-            <li>Entrega de nuestros informes comerciales inmediatos o máximo en 4 días hábiles.</li>
-            <li>Información actualizada con Boletines por sectores de entrega mensual.</li>
-            <li>Reportes completos para tomar decisiones sobre clientes y proveedores.</li>
+            <li>
+              Reportes completos para tomar decisiones sobre clientes y
+              proveedores.
+            </li>
             <li>Visitas físicas en cada informe comercial o crediticio.</li>
-            <li>Alta tecnología con Inteligencia artificial como buro jurídico, buro de líneas de crédito y plataforma online de morosos, fraudes  y demandados.</li>
+            <li>
+              Alta tecnología con Inteligencia artificial como buro jurídico,
+              buro de líneas de crédito y plataforma online de morosos, fraudes
+              y demandados.
+            </li>
           </ul>
         </div>
 
@@ -62,42 +86,54 @@ import Translatebtn from "../components/Translatebtn.astro";"../../components/Tr
       </section>
 
       <section class="servicios">
-        <img class="servicioimg" src="images/servicios.jpg" alt="Servicios profesionales" />
-    
+        <img
+          class="servicioimg"
+          src="images/servicios.jpg"
+          alt="Servicios profesionales"
+        />
+
         <div class="serviciostext">
-            <h2 style="font-size: 27px">Nuestros Servicios</h2>
-            <p style="font-size: 25px">
-                ¿Quieres otorgar créditos con cero perdidas y aumentar tus ingresos? ¡Tenemos las soluciones perfectas para ti!
-            </p>
-            <p>
-              Como líderes en el mercado, ofrecemos una gama completa de servicios, incluyendo informes comerciales analíticos, recuperación de cartera vencida y servicios con alta tecnología con plataformas online únicas en América Latina. 
-                 
-                </p>
-                  <p>Contamos con clientes en todo México, Estados Unidos, Canadá, Colombia, Brasil y Argentina.
-            </p>
-            <p>
-                
-            </p>
-            <a href="/servicios">
-                <button class="conoce-button">Conoce nuestros servicios</button>
-            </a>
+          <h2 style="font-size: 27px">Nuestros Servicios</h2>
+          <p style="font-size: 25px">
+            ¿Quieres otorgar créditos con cero perdidas y aumentar tus ingresos?
+            ¡Tenemos las soluciones perfectas para ti!
+          </p>
+          <p>
+            Como líderes en el mercado, ofrecemos una gama completa de
+            servicios, incluyendo informes comerciales analíticos, recuperación
+            de cartera vencida y servicios con alta tecnología con plataformas
+            online únicas en América Latina.
+          </p>
+          <p>
+            Contamos con clientes en todo México, Estados Unidos, Canadá,
+            Colombia, Brasil y Argentina.
+          </p>
+          <p></p>
+          <a href="/servicios">
+            <button class="conoce-button">Conoce nuestros servicios</button>
+          </a>
         </div>
-    </section>
-    
+      </section>
 
       <section class="diferentes">
         <div class="txtdiferentes">
-          <h2>Sabemos proporcionar a Nuestros Clientes los mejores resultados</h2>
+          <h2>
+            Sabemos proporcionar a Nuestros Clientes los mejores resultados
+          </h2>
           <p>
-            Como filial de Grupo Plataforma contra la Morosidad (GRUPO PCMM) entendemos la importancia de tomar decisiones financieras sólidas y respaldadas por expertos.
+            Como filial de Grupo Plataforma contra la Morosidad (GRUPO PCMM)
+            entendemos la importancia de tomar decisiones financieras sólidas y
+            respaldadas por expertos.
           </p>
 
           <h2>Confía en Nosotros</h2>
           <p class="confianza">
-            ¿Has experimentado dificultades al obtener información precisa y confiable sobre los riesgos crediticios?
+            ¿Has experimentado dificultades al obtener información precisa y
+            confiable sobre los riesgos crediticios?
 
- <br />
-            <br /> ¿Deseas mejorar la gestión de tu empresa y reducir los riesgos financieros?
+            <br />
+            <br /> ¿Deseas mejorar la gestión de tu empresa y reducir los
+            riesgos financieros?
           </p>
         </div>
       </section>
