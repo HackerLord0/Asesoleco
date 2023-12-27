@@ -1,0 +1,40 @@
+<style>
+  img {
+      width: 50px;
+      height: 50px;
+      margin: 15px;
+      transition: transform 0.3s ease;
+  }
+
+  .bandera {
+      position: relative; 
+      display: inline-block; 
+  }
+
+  .bandera:hover img {
+      transform: scale(1.2);
+  }
+
+  .leyenda {
+      position: absolute; 
+      bottom: -20px; 
+      left: 50%; 
+      transform: translateX(-50%); 
+      opacity: 0; 
+      transition: opacity 0.3s ease; 
+  }
+
+  .bandera:hover .leyenda {
+      opacity: 1; 
+  }
+</style>
+
+<a href="/" class="bandera">
+  <img src="/images/mx.png" alt="Español" title="Haga clic para cambiar a español">
+  <div class="leyenda">Español</div>
+</a>
+
+<a href="/us/index_us" class="bandera">
+  <img src="/images/us.png" alt="Inglés" title="Click to switch to English">
+  <div class="leyenda">Inglés</div>
+</a>

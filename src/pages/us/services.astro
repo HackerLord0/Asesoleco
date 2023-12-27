@@ -1,0 +1,105 @@
+---
+import Navigation_us from "../../components/Navigation_us.astro";
+import Footer_us from "../../components/Footer_us.astro";
+import Fab from "../../components/Fab.astro";
+import "../../styles/global.css";
+import "../../styles/servicios.css";
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>Services | ASESOLECO</title>
+  </head>
+  <body>
+    <Navigation_us />
+
+    <div class="container">
+      <div class="tittle">
+        <img class="imgsol" src="/images/soluciones.png" alt="" />
+        <p class="soluciones">SERVICES</p>
+      </div>
+      <div class="servicios-container">
+        <div class="serviciostxt">
+          <p class="txtserv">
+            We are a group of experts in credit and collection, legal advice, actuarial science, finance, technology, and business science analysts with national and international coverage. We have cutting-edge technology to ensure precision and speed in the information you need. We understand the importance of making solid financial decisions backed by experts.
+          </p>
+
+          <p class="txtserv">
+            Discover our various solutions where we can help your business:
+          </p>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <img src="/images/alertas.jpg" alt="Image description" />
+
+            <p class="txtcard">Alert System.</p>
+
+            <a href="../services/alerts"><button>Access</button></a>
+          </div>
+          <div class="card">
+            <img src="/images/informe.jpg" alt="Image description" />
+            <p class="txtcard">Commercial Reports.</p>
+            <a href="../services/commercial"><button>Access</button></a>
+          </div>
+
+          <div class="card">
+            <img src="/images/informexpres.jpg" alt="Image description" />
+
+            <p class="txtcard">Express Commercial Reports.</p>
+
+            <a href="../services/express"><button>Access</button></a>
+          </div>
+          <div class="card">
+            <img src="/images/plataforma.jpg" alt="Image description" />
+
+            <p class="txtcard">Online Platform and Legal Bureau.</p>
+
+            <a href="../services/platform"><button>Access</button></a>
+          </div>
+
+          <div class="card">
+            <img src="/images/cartera.jpg" alt="Image description" />
+
+            <p class="txtcard">Recovery of Overdue Portfolio.</p>
+
+            <a href="../services/portfolio"><button>Access</button></a>
+          </div>
+          <div class="card">
+            <img src="/images/credito.jpg" alt="Image description" />
+
+            <p class="txtcard">Credit Lines Bureau.</p>
+
+            <a href="../services/lines"><button>Access</button></a>
+          </div>
+          <div class="card">
+            <img src="/images/buro.jpg" alt="Image description" />
+
+            <p class="txtcard">
+              Consultations of Public Registry of Property and Commerce.
+            </p>
+
+            <a href="../services/commerce"><button>Access</button></a>
+          </div>
+          <div class="card">
+            <img src="/images/seguros.jpg" alt="Image description" />
+
+            <p class="txtcard">
+              Implementation of Secure Credit Granting Systems.
+            </p>
+
+            <a href="../services/securecredit"><button>Access</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <Fab />
+  <Footer_us />
+</html>

@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import "../styles/footer.css";
-import Btnclientesfooter from "./btnclientesfooter.astro";
+import Btnclientesfooter_us from "./btnclientesfooter_us.astro";
 import Translatebtn from "./Translatebtn.astro";
 ---
 
@@ -16,12 +16,12 @@ import Translatebtn from "./Translatebtn.astro";
   </head>
 
   <body style="margin: 0;">
-    <!-- Tu contenido principal aquí -->
+    <!-- Your main content here -->
 
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-section">
-          <h4 style="text-align: center">Síguenos en redes sociales</h4>
+          <h4 style="text-align: center">Follow us on social media</h4>
           <ul>
             <li>
               <a
@@ -53,14 +53,9 @@ import Translatebtn from "./Translatebtn.astro";
             </li>
           </ul>
           
-          
           <br/>
-
-          <div>
-         <h4 style="text-align: center">Traducir</h4>
+          <h4 style="text-align: center">Translate</h4>
           <Translatebtn/>
-        </div>
-
         </div>
 
         <div
@@ -92,18 +87,18 @@ import Translatebtn from "./Translatebtn.astro";
         </div>
 
         <div class="footer-section3">
-          <h4>Links de interés</h4>
+          <h4>Interesting links</h4>
           <ul>
-            <li><a href="/Aviso-Privacidad">Aviso de Privacidad</a></li>
+            <li><a href="/us/privacypolicy">Privacy Policy</a></li>
             <li>
               <a href="/files/Brochure_Plataforma.pdf" target="_blank"
-                >Brochure Plataforma Contra La Morosidad</a
+                >Brochure Platform Against Delinquency</a
               >
             </li>
             <li>
               <a
                 href="https://www.plataformajuridica.com.mx/"
-                target="_blank">Plataforma Jurídica</a
+                target="_blank">Legal Platform</a
               >
             </li>
             <li>
@@ -114,22 +109,23 @@ import Translatebtn from "./Translatebtn.astro";
             <li>
               <a
                 href="http://www.plataformacontralamorosidad.com/home.php"
-                target="_blank">Plataforma Contra la Morosidad</a
+                target="_blank">Platform Against Delinquency</a
               >
             </li>
-            <li><a href="/chat">FAQ - Preguntas Frecuentes</a></li>
-            <li><a href="/mnto" target="_blank">Desarrollo y Soporte</a></li>
+            <li><a href="/chat">FAQ - Frequently Asked Questions</a></li>
+            <li><a href="/support" target="_blank">Development and Support</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <Btnclientesfooter/>
+        <Btnclientesfooter_us/>
+        
         <p style="text-decoration: underline;">
-          &copy; 2023 Asesoleco. Todos los derechos reservados.
+          &copy; 2023 Asesoleco. All rights reserved.
         </p>
         <p>
-          Powered by <a href="/mnto" style="text-decoration: underline;"
+          Powered by <a href="/support" style="text-decoration: underline;"
             >Hckld@Dev</a
           >
         </p>

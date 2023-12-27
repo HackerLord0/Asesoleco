@@ -1,0 +1,103 @@
+---
+import Navigation_us from "../../components/Navigation_us.astro";
+import Footer_us from "../../components/Footer_us.astro";
+import Fab from "../../components/Fab.astro";
+import "../../styles/global.css";
+import "../../styles/index.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASESOLECO</title>
+  </head>
+  <body style="margin: 0">
+    <Navigation_us />
+
+    <div class="content">
+      <h1 class="welcome-header">
+        PCMM GROUP (DEBT PREVENTION PLATFORM)
+        
+      </h1>
+
+      <section class="asesoria">
+        <div class="text">
+          <h2 style=" font-size: 27px">
+            Why is Asesoleco the preferred company for our clients?
+          </h2>
+          <p style=" font-size: 25px ">Because we offer unbeatable quality and unique benefits, including:</p>
+          <ul class="list">
+            <li>
+              Unique and affordable prices in Latin America, without sacrificing the quality of our products and services.
+            </li>
+            <li>
+              100% reliable and guaranteed information.
+            </li>
+            <li>Delivery of our commercial reports immediately or within a maximum of 4 business days.</li>
+            <li>Updated information with sector bulletins delivered monthly.</li>
+            <li>Comprehensive reports to make decisions about clients and suppliers.</li>
+            <li>Physical visits in each commercial or credit report.</li>
+            <li>High technology with artificial intelligence as a legal bureau, credit lines bureau, and online platform for debtors, frauds, and defendants.</li>
+          </ul>
+        </div>
+
+        <img
+          class="asesoriaimg"
+          src="/images/asesoria.jpg"
+          alt="Professional Advice"
+        />
+      </section>
+
+      <section class="servicios">
+        <img class="servicioimg" src="/images/servicios.jpg" alt="Professional Services" />
+    
+        <div class="serviciostext">
+            <h2 style="font-size: 27px">Our Services</h2>
+            <p style="font-size: 25px">
+                Do you want to grant credits with zero losses and increase your income? We have the perfect solutions for you!
+            </p>
+            <p>
+              As market leaders, we offer a complete range of services, including analytical commercial reports, recovery of overdue portfolios, and services with high technology platforms unique in Latin America. 
+                 
+                </p>
+                  <p>We have clients throughout Mexico, the United States, Canada, Colombia, Brazil, and Argentina.
+            </p>
+            <p>
+                
+            </p>
+            <a href="/services">
+                <button class="conoce-button">Discover our services</button>
+            </a>
+        </div>
+    </section>
+    
+
+      <section class="diferentes">
+        <div class="txtdiferentes">
+          <h2>We Know How to Provide Our Clients with the Best Results</h2>
+          <p>
+            As a subsidiary of the Platform Against Delinquency Group (PCMM GROUP), we understand the importance of making solid and expert-backed financial decisions.
+          </p>
+
+          <h2>Trust Us</h2>
+          <p class="confianza">
+            Have you experienced difficulties in obtaining accurate and reliable information about credit risks?
+
+ <br />
+            <br /> Do you want to improve your company's management and reduce financial risks?
+          </p>
+        </div>
+      </section>
+    </div>
+    <Fab />
+    <Footer_us />
+  </body>
+</html>

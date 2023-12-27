@@ -105,7 +105,7 @@
 
 /* Estilo para .diferentes */
 .diferentes {
-  background-image: url("images/corporativos.jpg");
+  background-image: url("/images/corporativos.jpg");
   background-size: cover;
   display: flex;
   align-items: center;

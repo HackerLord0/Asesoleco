@@ -1,0 +1,132 @@
+---
+import Navigation_us from "../../components/Navigation_us.astro";
+import Footer_us from "../../components/Footer_us.astro";
+import Fab from "../../components/Fab.astro";
+import Btncontacto_us from "../../components/btncontacto_us.astro";
+import "../../styles/contacto.css";
+import "../../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Contact | ASESOLECO</title>
+  </head>
+  <body style="margin: 0;">
+    <Navigation_us />
+    <div class="main">
+      <div class="texto">
+        <h1>Contact</h1>
+
+        <h3>Switchboard and Sales Telephones:</h3>
+        <p>
+          <strong>Mobile:</strong><br />
+          <i class="fa fa-mobile"></i>
+          <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
+            (55) 40-92-33-74</a>
+        </p>
+        <p>
+          <strong>Commutator:</strong><br />
+          <i class="fa fa-hashtag"></i>
+          <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
+            (55) 58-85-60-30</a><br /><br />
+            <i class="fa fa-hashtag"></i>
+          <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
+            (55) 75-77-89-30</a>
+        </p>
+        <p>
+          <strong>Fax:</strong><br />
+          <i class="fa fa-fax"></i>
+          <a href="tel:(55) 40-92-33-74" style="text-decoration: underline;">
+            (52) 55-10-84-73-19</a>
+        </p>
+        
+
+        <h3>Directory:</h3>
+
+        <p>
+          <strong>Sales:</strong><br />
+          <i class="fa fa-envelope"></i><a class="mail"
+            href="mailto:ventas@plataformacontralamorosidad.com"
+            style="text-decoration: underline;">ventas@plataformacontralamorosidad.com</a
+          >
+          <br /><br />
+          <i class="fa fa-envelope"></i><a
+            href="mailto:plataforma.ventas@asesoleco.com"
+            style="text-decoration: underline;"
+            >ventas@asesoleco.com</a
+          >
+        </p>
+
+        <p>
+          <strong>Operation & Systems:</strong><br />
+          <i class="fa fa-envelope"></i><a
+            href="mailto:soporte@asesoleco.com"
+            style="text-decoration: underline;">soporte@asesoleco.com</a
+          >
+        </p>
+        <h3>Schedule</h3>
+        <p><i class="fa fa-clock"></i> Lunes - Viernes 9:00 AM - 6:00 PM</p>
+
+        <h3>Corporative:</h3>
+        <p>
+          <i class="fa fa-map"></i>
+          Pafnuncio Padilla 26, 4to piso, Cd. Satélite, 53100 Naucalpan de Juárez, Méx.
+        </p>
+
+        <h3>Texas office</h3>
+        <p>
+          <i class="fa fa-map"></i>
+          17806 Int 121 Intertate Highway 10, San Antonio Texas</p>
+          <p>
+          <i class="fa fa-fax"></i> +1 647-361-6440
+        </p>
+
+        <h3>Guadalajara office</h3>
+        <p>
+          <i class="fa fa-map"></i>
+          Av. Acueducto 6075 Local A,
+          Puerta de Hierro Zapopan Jalisco
+        </p>
+      </div>
+
+      <div class="form">
+        <h1>We will contact you.</h1>
+        <form class="formulario"  method="POST" action="contacto.php">
+          <p>
+            <label>Names (s):</label>
+            <input type="text" name="nombre" required />
+          </p>
+          <p>
+            <label>Last names:</label>
+            <input type="text" name="apellidos" />
+          </p>
+          <p>
+            <label>E-mail:</label>
+            <input type="email" name="email" required />
+          </p>
+          <p>
+            <label>Phone:</label>
+            <input type="text" name="teléfono" required />
+          </p>
+          <p class="full" style="margin-right: 30px;">
+            <label>Message:</label>
+            <textarea name="mensaje" required></textarea>
+          </p>
+          <p class="full">
+         
+            <Btncontacto_us />
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <Fab />
+    <Footer_us />
+  </body>
+  
+</html>
+

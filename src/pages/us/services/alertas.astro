@@ -1,0 +1,49 @@
+---
+import Navigation from "../../components/Navigation.astro";
+import Fab from "../../components/Fab.astro";
+import Footer from "../../components/Footer.astro";
+import Returnbutton from "../../components/returnbutton.astro"; 
+import "../../styles/global.css";
+import "../../styles/services/alertas.css";
+import "../../styles/services/banner.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASESOLECO | Sistema de alertas.</title>
+  </head>
+  <body>
+    <Navigation />
+    <div class="banner">
+      <img class="bannerimg" src="/images/alertasbanner.jpg"></img>
+      <p class="tittle">SISTEMA DE ALERTAS</p>
+    </div>
+    <div class="contain">
+      <p>De morosos, fraudes y demandados en tiempo real. Nuestra herramienta está diseñada para mantenerte un paso adelante, proporcionándote información crítica en tiempo real.</p>
+      
+      <p>Descubre las ventajas clave que ofrecemos para proteger tus intereses comerciales:</p>
+      
+      <ul>
+          <li>Alertas Inmediatas en Tiempo Real.</li>
+          <li>Gestión Efectiva de Morosos.</li>
+          <li>Detección Temprana de Actividades Fraudulentas.</li>
+          <li>Personalización de Alertas para el monitoreo de morosos.</li>
+          <li>Optimización de la Toma de Decisiones.</li>
+      </ul>
+      
+      <p>Con información en tiempo real sobre morosos, fraudes y demandados, optimizando tu toma de decisiones. Estarás equipado con datos críticos que te permitirán evaluar riesgos, tomar decisiones informadas y mantener la salud financiera de tu empresa.</p>
+      
+      <p>Descubre el poder de la anticipación con nuestra herramienta, estarás siempre informado y preparado para enfrentar los desafíos financieros y legales, asegurando la seguridad y la estabilidad de tu negocio.</p>
+  </div>
+  
+
+    <Returnbutton/>
+    <Fab />
+    <Footer />
+  </body>
+</html>
