@@ -1,0 +1,48 @@
+---
+import Navigation_us from "../../../components/Navigation_us.astro";
+import Fab from "../../../components/Fab.astro";
+import Footer_us from "../../../components/Footer_us.astro";
+import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import "../../../styles/global.css";
+import "../../../styles/services/alertas.css";
+import "../../../styles/services/banner.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASESOLECO | Implementation of Secure Credit Granting Systems.</title>
+  </head>
+  <body>
+    <Navigation_us/>
+    <div class="banner">
+      <img class="bannerimg" src="/images/creditoss.jpg"></img>
+      <p class="tittle" style="top:10%">IMPLEMENTATION OF SECURE CREDIT GRANTING SYSTEMS</p>
+    </div>
+    <div class="contain">
+      <p>We conduct a thorough analysis of your credit operations to understand your unique needs and challenges, implementing efficient systems for credit granting without losses.</p>
+  
+      <p>We are your strategic partner in implementing secure credit granting systems. We specialize in providing a comprehensive solution that encompasses everything from review and auditing to system and process implementation, with a specific focus on credit corrections and collection. Discover how our service can strengthen your credit practices and optimize portfolio management in:</p>
+      
+      <ul>
+          <li>Elimination of financial waste.</li>
+          <li>Thorough Review and Audit.</li>
+          <li>Credit Risk Analysis.</li>
+          <li>Custom System Design.</li>
+          <li>Implementation of Advanced Technologies.</li>
+          <li>Continuous Corrections and Improvements.</li>
+          <li>Staff Training.</li>
+      </ul>
+  
+      <p>Extensive experience in implementing secure credit granting systems with experts in your sector. From review and audit to implementation and continuous improvement, we offer a comprehensive solution to optimize your credit and collection processes and strengthen the financial health of your company.</p>
+  </div>
+  
+    <Returnbutton_us/>
+    <Fab />
+    <Footer_us />
+  </body>
+</html>

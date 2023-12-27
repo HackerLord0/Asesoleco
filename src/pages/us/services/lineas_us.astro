@@ -1,0 +1,44 @@
+---
+import Navigation_us from "../../../components/Navigation_us.astro";
+import Fab from "../../../components/Fab.astro";
+import Footer_us from "../../../components/Footer_us.astro";
+import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import "../../../styles/global.css";
+import "../../../styles/services/alertas.css";
+import "../../../styles/services/banner.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASESOLECO | Credit Line Bureau.</title>
+  </head>
+  <body>
+    <Navigation_us />
+    <div class="banner">
+      <img class="bannerimg" src="/images/lineas.jpg"></img>
+      <p class="tittle">CREDIT LINE BUREAU</p>
+    </div>
+    <div class="contain">
+      <p>Get maximum credit lines and income information from Canada to Brazil. Our platform is designed to provide key information quickly and efficiently, focusing on two fundamental aspects: the maximum available credit line and the last reported annual income. Discover how our service can expedite your credit assessment processes.</p>
+  
+      <p>Advantages:</p>
+      
+      <ul>
+          <li>Intuitive and Accessible Interface.</li>
+          <li>Security and Confidentiality.</li>
+          <li>Constant Updates.</li>
+      </ul>
+  
+      <p>The Credit Line Bureau can enhance your ability to make decisions regarding credit line increases and serve as a complement for quick credit approvals. With instant information on the maximum credit line and the last reported annual income, you'll be equipped to assess credit risk quickly and efficiently.</p>
+  </div>
+  
+    <Returnbutton_us/>
+    <Fab />
+    <Footer_us />
+  </body>
+</html>

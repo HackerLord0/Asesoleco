@@ -1,0 +1,54 @@
+---
+import Navigation_us from "../../../components/Navigation_us.astro";
+import Fab from "../../../components/Fab.astro";
+import Footer_us from "../../../components/Footer_us.astro";
+import Returnbutton_us from "../../../components/returnbutton_us.astro"; 
+import "../../../styles/global.css";
+import "../../../styles/services/alertas.css";
+import "../../../styles/services/banner.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>ASESOLECO | Online Platform and Legal Bureau.</title>
+  </head>
+  <body>
+    <Navigation_us />
+    <div class="banner">
+      <img class="bannerimg" src="/images/buroonline.jpg"></img>
+      <p class="tittle">ONLINE PLATFORM AND LEGAL BUREAU</p>
+    </div>
+    <div class="contain">
+      <p>Comprehensively protect your company with our real-time Online Platform. From preventing delinquencies to detecting fraud, uncollectibles, defendants, and plaintiffs. We offer complete solutions to ensure the safety and financial stability of your business. Discover how our platform can be your strategic partner in financial risk management.</p>
+  
+      <p>Advantages:</p>
+      
+      <ul>
+          <li>Real-time Risk Assessment.</li>
+          <li>Sophisticated Fraud Detection.</li>
+          <li>Accounts Sent to Uncollectibles.</li>
+          <li>Prevention of Delinquencies and Uncollectibles.</li>
+          <li>Continuous Risk Monitoring.</li>
+          <li>Access to Complete Legal Records.</li>
+          <li>Easy Search and Navigation.</li>
+          <li>Real-time Updated Information.</li>
+          <li>Detailed Profile of Defendants.</li>
+      </ul>
+  
+      <p>Our platform stays updated with current legal regulations. This ensures that you are always in compliance and reduces the risk of sanctions related to business practices.</p>
+  
+      <p>An excellent tool: your reliable source of legal and commercial information providing access to exhaustive records of lawsuits, defendants, and active delinquencies. Our essential tool is designed to offer you a detailed and up-to-date view of thousands of records, providing the necessary information to make informed decisions.</p>
+  
+      <p>Discover how our platform can be your ally in managing commercial and credit risks.</p>
+  </div>
+  
+    <Returnbutton_us/>
+    <Fab />
+    <Footer_us />
+  </body>
+</html>
