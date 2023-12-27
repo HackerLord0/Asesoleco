@@ -11,6 +11,10 @@
   margin: 0;
   padding: 30px;
   position: relative;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30%;
 }
 
 
@@ -157,7 +161,9 @@ p{
     opacity: 1;
     width: 50%;
   }
-
+  .translate {
+    display: none;
+  }
   .asesoria .text,
   .servicios .serviciostext {
     order: -1;

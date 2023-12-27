@@ -4,6 +4,7 @@ import Footer_us from "../../components/Footer_us.astro";
 import Fab from "../../components/Fab.astro";
 import "../../styles/global.css";
 import "../../styles/index.css";
+import Translatebtn from "../../components/Translatebtn.astro";"../../components/Translatebtn.astro"
 ---
 
 <!doctype html>
@@ -23,10 +24,12 @@ import "../../styles/index.css";
     <Navigation_us />
 
     <div class="content">
-      <h1 class="welcome-header">
-        PCMM GROUP (DEBT PREVENTION PLATFORM)
-        
+      <h1 class="welcome-header" >
+        <span>PCMM GROUP (DEBT PREVENTION PLATFORM)</span>
+        <div class="translate" style="margin-left: auto; font-size: 15px;"><Translatebtn/></div>
       </h1>
+      
+      
 
       <section class="asesoria">
         <div class="text">
