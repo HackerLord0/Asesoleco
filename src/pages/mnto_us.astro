@@ -1,0 +1,39 @@
+---
+import Navigation_us from "../components/Navigation_us.astro";
+import Footer_us from "../components/Footer_us.astro";
+import Fab from "../components/Fab.astro";
+import "../styles/global.css";
+---
+<style>
+  .img {
+    align-items: center; text-align: center; 
+  }
+    @media screen and (max-width: 767px) {
+  img {
+    width: 100%;
+  
+}
+  }
+</style>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>Dev-Support | ASESOLECO</title>
+  </head>
+  <body>
+    <Navigation_us />
+
+  <div class="img">
+        <img src="/images/mantenimiento.jpg" alt="Maintenance">
+      </div>
+      
+    <Fab />
+    <Footer_us />
+  </body>
+</html>
